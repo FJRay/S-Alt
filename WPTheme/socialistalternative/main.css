@@ -127,7 +127,17 @@ h1, h2, h3, h4, h5 {
     box-sizing: border-box;
     padding-right: 20px;
 }
-
+.salt-mainsearch {
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+}
+.salt-mainsearch input {
+    background: none;
+    border: none;
+    color: #FFF;
+    border-bottom: 1px solid #959595;
+}
 .salt-maincontent, .salt-sidebar {
     display: inline-block;
     vertical-align: top;
@@ -379,6 +389,9 @@ h1, h2, h3, h4, h5 {
 .salt-newsitem h3 {
     margin: 0px;
     padding: 0px;
+}
+.salt-error {
+    margin-top: 0px;
 }
 .salt-newsitem img {
     width: 250px;
