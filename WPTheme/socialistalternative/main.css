@@ -374,6 +374,7 @@ h1, h2, h3, h4, h5 {
     display: inline-block;
     width: 50%;
     box-sizing: border-box;
+    vertical-align:top;
 }
 .salt-newsitem h3 {
     margin: 0px;
