@@ -5,11 +5,9 @@ body {
   background-color: rgb(245, 248, 223);
 }
 
-h1 {
-  font-family: "Oswald", sans-serif;
-}
+h1, h2 {
+    font-family: 'Coda Caption', sans-serif;}
 
-h2,
 h3,
 h4,
 h5 {
@@ -92,12 +90,20 @@ h5 {
   font-size: 3em;
 }
 
+.wp-image-102 {
+    width: 50%;
+    float: left;
+}
+
 .saltAboutHeader {
-  font-size: 5em;
+  font-size: 4em;
   position: absolute;
   width: 100%;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+}
+
+.saltAboutParagraphs {
+    margin-top: 204px;
 }
 
 .saltPoliciesHeader {
@@ -349,7 +355,6 @@ h5 {
   width: 80%;
   color: rgb(249, 249, 228);
   font-size: 2em;
-  font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
 .salt-infoblock p {
