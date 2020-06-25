@@ -5,13 +5,19 @@ body {
   background-color: rgb(245, 248, 223);
 }
 
-h1, h2 {
-    font-family: 'Coda Caption', sans-serif;}
+h1,
+h2 {
+  font-family: "Coda Caption", sans-serif;
+}
 
 h3,
 h4,
 h5 {
   font-family: "Work Sans", sans-serif;
+}
+
+p {
+  margin: 16px 16px;
 }
 .salt-bodycontainer {
   font-size: 0px;
@@ -90,24 +96,67 @@ h5 {
   font-size: 3em;
 }
 
+.saltAboutContainer .wp-block-group__inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .wp-image-102 {
-    width: 50%;
-    float: left;
+  width: 100%;
 }
 
 .saltAboutHeader {
   font-size: 4em;
-  position: absolute;
   width: 100%;
   text-align: center;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: rgb(12, 8, 36);
 }
 
-.saltAboutParagraphs {
-    margin-top: 204px;
+.saltAboutContainer .wp-block-image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.saltAboutParagraphs .wp-block-group__inner-container {
+  display: inline;
 }
 
 .saltPoliciesHeader {
-  color: greenyellow;
+  color: rgb(12, 8, 36);
+  font-size: 4em;
+  margin: 20px 20px 20px 50px;
+}
+
+.saltAboutPageSubHeading {
+    background-color: rgb(52, 83, 120, 0.6);
+    padding: 6px 68px;
+    z-index: 1;
+    position: relative;
+}
+
+.saltPolicies .alignright {
+    float: right;
+    margin: -70px 0 10px 10px;
+    z-index: 0;
+}
+
+.saltPolicies img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.saltPolicies li {
+    padding: 10px 10px;
+    margin: 0 40px 0 20px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -172,15 +221,15 @@ h5 {
 }
 
 .salt-mainsearch {
-    display: inline-block;
-    position: absolute;
-    right: 19px;
+  display: inline-block;
+  position: absolute;
+  right: 19px;
 }
 .salt-mainsearch input {
-    background: none;
-    border: none;
-    color: #FFF;
-    border-bottom: 1px solid #959595;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #959595;
 }
 
 .salt-fullwidth .salt-maincontent {
@@ -438,21 +487,21 @@ h5 {
   color: inherit;
 }
 .salt-newsitem {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
-    padding: 10px;
-    margin: 0px;
-    display: inline-block;
-    width: 50%;
-    box-sizing: border-box;
-    vertical-align:top;
+  background-color: rgb(12, 8, 36);
+  color: rgb(249, 249, 228);
+  padding: 10px;
+  margin: 0px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
 }
 .salt-newsitem h3 {
   margin: 0px;
   padding: 0px;
 }
 .salt-error {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 .salt-newsitem img {
   width: 250px;
