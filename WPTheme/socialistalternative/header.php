@@ -14,6 +14,9 @@
                 <a href="<?php echo get_bloginfo("wpurl"); ?>">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/mainlogo.png" alt="Socialist Alternative">
                 </a>
+                <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
+					<input name="search" placeholder="Search...">
+				</form>
             </h1>
             <nav><ul>
                 <?php wp_list_pages( '&title_li=' ); ?>

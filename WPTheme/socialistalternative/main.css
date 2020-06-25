@@ -163,6 +163,19 @@ h5 {
   display: inline-block;
   vertical-align: top;
 }
+
+.salt-mainsearch {
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+}
+.salt-mainsearch input {
+    background: none;
+    border: none;
+    color: #FFF;
+    border-bottom: 1px solid #959595;
+}
+
 .salt-fullwidth .salt-maincontent {
   width: 100%;
   padding: 20px 10px;
@@ -419,17 +432,21 @@ h5 {
   color: inherit;
 }
 .salt-newsitem {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
-  padding: 10px;
-  margin: 0px;
-  display: inline-block;
-  width: 50%;
-  box-sizing: border-box;
+    background-color: rgb(12,8,36);
+    color: rgb(249,249,228);
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align:top;
 }
 .salt-newsitem h3 {
   margin: 0px;
   padding: 0px;
+}
+.salt-error {
+    margin-top: 0px;
 }
 .salt-newsitem img {
   width: 250px;
