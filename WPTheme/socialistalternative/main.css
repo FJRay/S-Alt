@@ -96,6 +96,8 @@ p {
   font-size: 3em;
 }
 
+/* Styling for 'About' page - could be put in separate file */
+
 .saltAboutContainer .wp-block-group__inner-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -117,6 +119,7 @@ p {
   grid-row-start: 1;
   grid-row-end: 2;
   color: rgb(12, 8, 36);
+  position: relative;
 }
 
 .saltAboutContainer .wp-block-image {
