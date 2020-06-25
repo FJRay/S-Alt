@@ -8,6 +8,10 @@
         }
     }
     echo '</main>';
-    get_sidebar();
+
+    if (is_page('Home') ) {
+        get_sidebar();
+      } 
+
     get_footer();
 ?>
