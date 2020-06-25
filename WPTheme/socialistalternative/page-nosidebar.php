@@ -1,4 +1,8 @@
 <?php 
+	/*
+	Template Name: No Sidebar
+	Template Post Type: post, page, event
+	*/
     get_header();
     echo '<main class="salt-maincontent">';
     if (have_posts()) {
@@ -8,6 +12,6 @@
         }
     }
     echo '</main>';
-    get_sidebar();
     get_footer();
 ?>
+
