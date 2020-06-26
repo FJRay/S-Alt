@@ -181,19 +181,22 @@ div .wpforms-field-medium {
 @media (min-width: 768px) {
   .saltAboutContainer .wp-block-group__inner-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: chartreuse;
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom: 30px;
+  }
+
+  .saltAboutContainer .wp-block-image {
+    margin-top: 0;
   }
 
   .wp-image-102 {
-    width: 100%;
+    width: 126%;
     position: relative;
+    z-index: 0;
+    margin-top: 130px;
   }
 
   .saltAboutHeader {
-    font-size: 2.5em;
-    width: 100%;
-    text-align: center;
     font-size: 4em;
     width: 100%;
     text-align: center;
@@ -203,6 +206,8 @@ div .wpforms-field-medium {
     grid-row-end: 2;
     color: rgb(12, 8, 36);
     position: relative;
+    margin: 18px auto;
+    z-index: 1;
   }
 
   .saltAboutContainer .wp-block-image {
@@ -217,32 +222,11 @@ div .wpforms-field-medium {
   }
 
   .saltPoliciesHeader {
-    color: rgb(12, 8, 36);
     font-size: 4em;
-    margin: 20px 20px 20px 50px;
-  }
-
-  .saltAboutPageSubHeading {
-    background-color: rgb(52, 83, 120, 0.6);
-    padding: 6px 68px;
-    z-index: 1;
-    position: relative;
-  }
-
-  .saltPolicies .alignright {
-    float: right;
-    margin: -70px 0 10px 10px;
-    z-index: 0;
   }
 
   .saltPolicies img {
-    width: 300px;
-    margin-right: 20px;
-  }
-
-  .saltPolicies li {
-    padding: 10px 10px;
-    margin: 0 40px 0 20px;
+    max-width: none;
   }
 }
 
@@ -250,7 +234,6 @@ div .wpforms-field-medium {
   .saltAboutContainer .wp-block-group__inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: violet;
   }
 
   .wp-image-102 {
@@ -259,17 +242,7 @@ div .wpforms-field-medium {
 
   .saltAboutHeader {
     font-size: 3em;
-    width: 100%;
-    text-align: center;
-    font-size: 4em;
-    width: 100%;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    color: rgb(12, 8, 36);
-    position: relative;
+    margin-top: 28px;
   }
 
   .saltAboutContainer .wp-block-image {
@@ -278,6 +251,10 @@ div .wpforms-field-medium {
     grid-row-start: 1;
     grid-row-end: 3;
     margin-top: -152px;
+  }
+
+  .saltAboutParagraphs {
+    margin-right: 20px;
   }
 
   .saltAboutParagraphs .wp-block-group__inner-container {
