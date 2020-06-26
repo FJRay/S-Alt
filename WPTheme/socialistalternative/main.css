@@ -91,12 +91,37 @@ p {
   vertical-align: top;
 }
 
+/* Styling for 'Get Involved' page */
+
+.saltGetInvolved {
+  width: 70%;
+  margin: auto;
+}
+
 .saltGetInvolvedHeader {
   text-align: center;
   font-size: 3em;
 }
 
-/* Styling for 'About' page - could be put in separate file */
+div .wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.wpforms-form button {
+  background-color: rgb(231, 61, 30) !important;
+  color: rgb(245, 248, 223) !important;
+}
+
+@media (min-width: 768px) {
+  .saltGetInvolved {
+    width: 570px;
+    margin: auto;
+  }
+
+  
+}
+
+/* Styling for 'About' page*/
 
 .saltAboutContainer .wp-block-group__inner-container {
   display: grid;
@@ -140,26 +165,26 @@ p {
 }
 
 .saltAboutPageSubHeading {
-    background-color: rgb(52, 83, 120, 0.6);
-    padding: 6px 68px;
-    z-index: 1;
-    position: relative;
+  background-color: rgb(52, 83, 120, 0.6);
+  padding: 6px 68px;
+  z-index: 1;
+  position: relative;
 }
 
 .saltPolicies .alignright {
-    float: right;
-    margin: -70px 0 10px 10px;
-    z-index: 0;
+  float: right;
+  margin: -70px 0 10px 10px;
+  z-index: 0;
 }
 
 .saltPolicies img {
-    width: 300px;
-    margin-right: 20px;
+  width: 300px;
+  margin-right: 20px;
 }
 
 .saltPolicies li {
-    padding: 10px 10px;
-    margin: 0 40px 0 20px;
+  padding: 10px 10px;
+  margin: 0 40px 0 20px;
 }
 
 @media only screen and (max-width: 950px) {
