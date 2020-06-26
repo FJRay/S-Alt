@@ -123,12 +123,15 @@ div .wpforms-field-medium {
 
 /* Styling for 'About' page*/
 
+.saltAboutContainer .wp-block-image {
+  margin-top: -200px;
+}
+
 .wp-image-102 {
-  position: absolute;
   width: 50%;
-  margin: auto;
-  top: 177px;
-  left: -2px;
+  z-index: -1;
+  position: relative;
+  margin-left: -27px;
 }
 
 .saltAboutHeader {
@@ -159,8 +162,15 @@ div .wpforms-field-medium {
   color: rgb(245, 248, 223);
 }
 
+.saltPolicies {
+  margin-top: 55px;
+}
+
 .saltPolicies img {
-float: right;
+  float: right;
+  margin-left: 10px;
+  max-width: 50%;
+  height: auto;
 }
 
 .saltPolicies li {
