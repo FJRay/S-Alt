@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.8"/>
         <title>Socialist Alternative</title>
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800,900&family=Archivo+Black&family=Black+Han+Sans&family=Coda+Caption:wght@800
-        &display=swap" rel="stylesheet">
-        <?php wp_head(); ?>
+        <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="salt-mainheader">
