@@ -18,8 +18,8 @@
 					<input name="search" placeholder="Search...">
 				</form>
             </h1>
-            <nav><ul>
-                <?php wp_list_pages( '&title_li=' ); ?>
-            </ul></nav>
+            <nav>
+                <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
+            </nav>
         </header>
         <div class="salt-bodycontainer">
