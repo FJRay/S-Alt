@@ -1,3 +1,9 @@
+.salt-cat-title {
+	margin: 0px;
+	color: #FFF;
+	font-size: 48px;
+	padding-left: 17px;
+}
 .salt-mainheader nav li:hover .sub-menu {
 	max-height: 100vw;
 }
@@ -10,6 +16,7 @@
 	display: block;
 	margin-left: -23px;
 	overflow: hidden;
+	margin-top: 6px;
 }
 .salt-mainheader nav .sub-menu li {
 	display: block;
