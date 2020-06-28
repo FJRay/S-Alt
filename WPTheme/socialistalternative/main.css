@@ -293,6 +293,38 @@ div .wpforms-field-medium {
 
 /* End of 'About' */
 
+/* Podcast page stylings */
+
+.saltPodcast {
+  margin-top: 70px;
+}
+
+.saltPodcast p {
+  margin-top: 50px;
+}
+
+.podcastLogos {
+  width: max-content;
+  margin: auto;
+}
+
+.podcastLogos .wp-block-group__inner-container {
+  display: flex;
+}
+
+.podcastLogos .wp-block-image {
+  margin: 20px !important;
+}
+
+.podcastLogos img {
+  display: block;
+  margin: auto;
+}
+
+
+.podcastLogos .is-resized>figcaption {
+  text-align: center;}
+
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
     display: block;
@@ -395,6 +427,7 @@ div .wpforms-field-medium {
 
 .salt-sidebar {
   background-color: rgb(245, 248, 223);
+  border-left: rgb(12, 8, 36) 3px solid;
 }
 .salt-articlepreview {
   display: block;
