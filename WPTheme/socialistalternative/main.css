@@ -293,6 +293,35 @@ div .wpforms-field-medium {
 
 /* End of 'About' */
 
+/* Donate page stylings */
+
+.saltDonate {
+  margin: 40px 20px;
+}
+
+.saltDonateButton {
+  text-align: center;
+}
+
+.saltDonate p {
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .saltDonate {
+    margin: 60px auto;
+    width: 50%;
+  }
+
+  .saltDonate h2 {
+margin: 40px 0;
+  }
+
+  .saltDonateButton {
+    margin: 40px;}
+
+}
+
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
     display: block;
