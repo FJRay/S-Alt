@@ -27,318 +27,549 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: rgb(245, 248, 223);
-}
-h1, h2, h3, h4, h5 {
+  }
+  
+  h1,
+  h2 {
+    font-family: "Coda Caption", sans-serif;
+  }
+  
+  h3,
+  h4,
+  h5 {
     font-family: "Work Sans", sans-serif;
-}
-.salt-bodycontainer {
+  }
+  
+  p {
+    margin: 16px 16px;
+  }
+  .salt-bodycontainer {
     font-size: 0px;
     min-height: calc(100vh - 300px);
-}
-.salt-bodycontainer>* {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: minmax(auto, 25%);
+    grid-auto-flow: column;
+  }
+  .salt-bodycontainer > * {
     font-size: 1rem;
-}
-.salt-mainheader {
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("resources/headerimage.jpg");
+  }
+  .salt-mainheader {
+    background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
+      url("resources/headerimage.jpg");
     background-size: cover;
-}
-.salt-mainheader h1 {
+  }
+  .salt-mainheader h1 {
     text-align: center;
     margin: 0px;
     padding: 7px;
-}
-.salt-mainheader h1 img {
+  }
+  .salt-mainheader h1 img {
     height: 120px;
     margin-top: 10px;
     margin-bottom: 5px;
-}
-.salt-mainheader nav {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
+  }
+  .salt-mainheader nav {
+    background-color: rgb(12, 8, 36);
+    color: rgb(249, 249, 228);
     font-weight: 700;
     font-size: 18px;
-}
-.salt-altcolors .salt-mainheader nav {
+  }
+  .salt-altcolors .salt-mainheader nav {
     background-color: rgb(231, 61, 30);
-}
-.salt-mainheader nav ul {
+  }
+  .salt-mainheader nav ul {
     list-style-type: none;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 70px;
     display: flex;
     justify-content: space-between;
-}
-.salt-mainheader nav li {
+  }
+  .salt-mainheader nav li {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     padding: 6px 30px;
     text-transform: uppercase;
-}
-.salt-mainheader nav a {
+  }
+  .salt-mainheader nav a {
     color: inherit;
     text-decoration: none;
     white-space: nowrap;
-}
-.salt-mainfooter {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
-}
-.salt-altcolors .salt-mainfooter {
+  }
+  
+  .salt-mainfooter {
+    background-color: rgb(12, 8, 36);
+    color: rgb(249, 249, 228);
+  }
+  .salt-altcolors .salt-mainfooter {
     background-color: rgb(231, 61, 30);
-}
-.salt-mainfooter {
+  }
+  .salt-mainfooter {
     min-height: 190px;
-}
-.salt-mainfooter>* {
+  }
+  .salt-mainfooter > * {
     display: inline-block;
     margin: 0px;
     padding: 0px;
     width: 33%;
     vertical-align: top;
-}
-
-@media (min-width: 992px) {
-  .saltAboutContainer .wp-block-group__inner-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
-
-  .wp-image-102 {
-    width: 100%;
+  @media (min-width: 992px) {
+    .saltAboutContainer .wp-block-group__inner-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .wp-image-102 {
+      width: 100%;
+    }
+  
+    .saltAboutHeader {
+      font-size: 3em;
+      margin-top: 28px;
+    }
+  
+    .saltAboutContainer .wp-block-image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      margin-top: -152px;
+    }
+  
+    .saltAboutParagraphs {
+      margin-right: 20px;
+    }
+  
+    .saltAboutParagraphs .wp-block-group__inner-container {
+      display: inline;
+    }
+  
+    .saltPoliciesHeader {
+      color: rgb(12, 8, 36);
+      font-size: 4em;
+      margin: 20px 20px 20px 50px;
+    }
+  
+    .saltAboutPageSubHeading {
+      background-color: rgb(52, 83, 120, 0.6);
+      padding: 6px 68px;
+      z-index: 1;
+      position: relative;
+    }
+  
+    .saltPolicies .alignright {
+      float: right;
+      margin: -70px 0 10px 10px;
+      z-index: 0;
+    }
+  
+    .saltPolicies img {
+      width: 300px;
+      margin-right: 20px;
+    }
+  
+    .saltPolicies li {
+      padding: 10px 10px;
+      margin: 0 40px 0 20px;
+    }
   }
-
-  .saltAboutHeader {
+  
+  /* End of 'About' */
+  
+  /* Podcast page stylings */
+  
+  .saltPodcast {
+    margin-top: 70px;
+  }
+  
+  .saltPodcast p {
+    margin-top: 50px;
+  }
+  
+  .podcastLogos {
+    width: max-content;
+    margin: auto;
+  }
+  
+  .podcastLogos .wp-block-group__inner-container {
+    display: flex;
+  }
+  
+  .podcastLogos .wp-block-image {
+    margin: 20px !important;
+  }
+  
+  .podcastLogos img {
+    display: block;
+    margin: auto;
+  }
+  
+  
+  .podcastLogos .is-resized>figcaption {
+    text-align: center;}
+  /* Styling for 'Get Involved' page */
+  
+  .saltGetInvolved {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .saltGetInvolvedHeader {
+    text-align: center;
     font-size: 3em;
-    margin-top: 28px;
   }
-
+  
+  div .wpforms-field-medium {
+    max-width: 100% !important;
+  }
+  
+  .wpforms-form button {
+    background-color: rgb(231, 61, 30) !important;
+    color: rgb(245, 248, 223) !important;
+  }
+  
+  @media (min-width: 768px) {
+    .saltGetInvolved {
+      width: 570px;
+      margin: auto;
+    }
+  }
+  
+  /* End of 'Get Involved' */
+  
+  /* Styling for 'About' page*/
+  
   .saltAboutContainer .wp-block-image {
+    margin-top: -200px;
+  }
+  
+  .wp-image-102 {
+    width: 50%;
+    z-index: -1;
+    position: relative;
+    margin-left: -27px;
+  }
+  
+  .saltAboutHeader {
+    font-size: 2em;
+    text-align: right;
+    width: 60%;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 3;
-    margin-top: -152px;
+    grid-row-end: 2;
+    color: rgb(12, 8, 36);
+    position: relative;
+    margin: 69px 10px 10px auto;
   }
-
-  .saltAboutParagraphs {
-    margin-right: 20px;
-  }
-
-  .saltAboutParagraphs .wp-block-group__inner-container {
-    display: inline;
-  }
-
+  
   .saltPoliciesHeader {
     color: rgb(12, 8, 36);
-    font-size: 4em;
-    margin: 20px 20px 20px 50px;
+    font-size: 2em;
+    margin: auto;
+    width: max-content;
   }
-
+  
   .saltAboutPageSubHeading {
     background-color: rgb(52, 83, 120, 0.6);
     padding: 6px 68px;
     z-index: 1;
     position: relative;
+    color: rgb(245, 248, 223);
   }
-
-  .saltPolicies .alignright {
-    float: right;
-    margin: -70px 0 10px 10px;
-    z-index: 0;
+  
+  .saltPolicies {
+    margin-top: 55px;
   }
-
+  
   .saltPolicies img {
-    width: 300px;
-    margin-right: 20px;
+    float: right;
+    margin-left: 10px;
+    max-width: 50%;
+    height: auto;
   }
-
+  
   .saltPolicies li {
     padding: 10px 10px;
     margin: 0 40px 0 20px;
   }
-}
-
-/* End of 'About' */
-
-/* Podcast page stylings */
-
-.saltPodcast {
-  margin-top: 70px;
-}
-
-.saltPodcast p {
-  margin-top: 50px;
-}
-
-.podcastLogos {
-  width: max-content;
-  margin: auto;
-}
-
-.podcastLogos .wp-block-group__inner-container {
-  display: flex;
-}
-
-.podcastLogos .wp-block-image {
-  margin: 20px !important;
-}
-
-.podcastLogos img {
-  display: block;
-  margin: auto;
-}
-
-
-.podcastLogos .is-resized>figcaption {
-  text-align: center;}
-
-@media only screen and (max-width: 950px) {
-    .salt-mainfooter>* {
-        display: block;
-        width: 100%;
-        padding: 30px;
-        box-sizing: border-box;
+  
+  @media (min-width: 768px) {
+    .saltAboutContainer .wp-block-group__inner-container {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      padding-bottom: 30px;
     }
-}
-.salt-footerhome img {
+  
+    .saltAboutContainer .wp-block-image {
+      margin-top: 0;
+    }
+  
+    .wp-image-102 {
+      width: 126%;
+      position: relative;
+      z-index: 0;
+      margin-top: 130px;
+    }
+  
+    .saltAboutHeader {
+      font-size: 4em;
+      width: 100%;
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      color: rgb(12, 8, 36);
+      position: relative;
+      margin: 18px auto;
+      z-index: 1;
+    }
+  
+    .saltAboutContainer .wp-block-image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  
+    .saltAboutParagraphs .wp-block-group__inner-container {
+      display: inline;
+    }
+  
+    .saltPoliciesHeader {
+      font-size: 4em;
+    }
+  
+    .saltPolicies img {
+      max-width: none;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .saltAboutContainer .wp-block-group__inner-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .wp-image-102 {
+      width: 100%;
+    }
+  
+    .saltAboutHeader {
+      font-size: 3em;
+      margin-top: 28px;
+    }
+  
+    .saltAboutContainer .wp-block-image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      margin-top: -152px;
+    }
+  
+    .saltAboutParagraphs {
+      margin-right: 20px;
+    }
+  
+    .saltAboutParagraphs .wp-block-group__inner-container {
+      display: inline;
+    }
+  
+    .saltPoliciesHeader {
+      color: rgb(12, 8, 36);
+      font-size: 4em;
+      margin: 20px 20px 20px 50px;
+    }
+  
+    .saltAboutPageSubHeading {
+      background-color: rgb(52, 83, 120, 0.6);
+      padding: 6px 68px;
+      z-index: 1;
+      position: relative;
+    }
+  
+    .saltPolicies .alignright {
+      float: right;
+      margin: -70px 0 10px 10px;
+      z-index: 0;
+    }
+  
+    .saltPolicies img {
+      width: 300px;
+      margin-right: 20px;
+    }
+  
+    .saltPolicies li {
+      padding: 10px 10px;
+      margin: 0 40px 0 20px;
+    }
+  }
+  
+  /* End of 'About' */
+  
+  @media only screen and (max-width: 950px) {
+    .salt-mainfooter > * {
+      display: block;
+      width: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+  }
+  .salt-footerhome img {
     width: 100%;
     box-sizing: border-box;
     padding: 30px 40px;
     max-height: 200px;
     object-fit: contain;
-}
-.salt-contactblock {
+  }
+  .salt-contactblock {
     box-sizing: border-box;
     padding-top: 35px;
-}
-.salt-contactblock a {
+  }
+  .salt-contactblock a {
     display: block;
     text-decoration: none;
     color: inherit;
     font-weight: 700;
     padding-bottom: 7px;
-}
-.salt-contactblock a span{
+  }
+  .salt-contactblock a span {
     display: inline-block;
     padding-top: 8px;
     vertical-align: top;
     padding-left: 5px;
-}
-.salt-contactblock h2 {
+  }
+  .salt-contactblock h2 {
     padding: 0px;
     font-size: 24px;
     padding: 0px;
     margin: 0px;
     padding-bottom: 7px;
-}
-.salt-contactblock a img {
+  }
+  .salt-contactblock a img {
     height: 30px;
     width: 30px;
     object-fit: contain;
-}
-.salt-socialblock img {
+  }
+  .salt-socialblock img {
     height: 60px;
-}
-.salt-sociallinks {
+  }
+  .salt-sociallinks {
     display: flex;
     justify-content: space-between;
     padding-top: 65px;
     box-sizing: border-box;
     padding-right: 20px;
-}
-.salt-mainsearch {
+  }
+  
+  .salt-maincontent,
+  .salt-sidebar {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .salt-mainsearch {
     display: inline-block;
     position: absolute;
     right: 19px;
-}
-.salt-mainsearch input {
+  }
+  .salt-mainsearch input {
     background: none;
     border: none;
-    color: #FFF;
+    color: #fff;
     border-bottom: 1px solid #959595;
-}
-.salt-maincontent, .salt-sidebar {
-    display: inline-block;
-    vertical-align: top;
-}
-.salt-fullwidth .salt-maincontent {
+  }
+  
+  .salt-fullwidth .salt-maincontent {
     width: 100%;
     padding: 20px 10px;
     box-sizing: border-box;
-    background-color: rgb(12,8,36);
-}
-.salt-fullwidth .salt-sidebar {
+    background-color: rgb(12, 8, 36);
+  }
+  .salt-fullwidth .salt-sidebar {
     display: none;
-}
-@media only screen and (max-width: 600px) {
-	.salt-maincontent {
-		width: 100% !important;
-		box-sizing: border-box !important;
-	}
-	.salt-sidebar {
-		display: none;
-	}
-}
-.salt-maincontent {
-    width: calc(100% - 350px);
-}
-.salt-sidebar {
-  background-color: rgb(245, 248, 223);
-  border-left: rgb(12, 8, 36) 3px solid;
-    width: 350px;
+  }
+  @media only screen and (max-width: 600px) {
+    .salt-maincontent {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .salt-sidebar {
+      display: none;
+    }
+  }
+  .salt-maincontent {
+    width: 100%;
+  }
+  
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+  }
+  
+  .salt-sidebar {
     background-color: rgb(245, 248, 223);
-}
-.salt-articlepreview {
+  }
+  .salt-articlepreview {
     display: block;
     text-decoration: none;
     color: inherit;
     margin: 20px;
     text-align: right;
-    border-top: solid 3px rgb(12,8,36);
+    border-top: solid 3px rgb(12, 8, 36);
     padding-top: 10px;
-}
-.salt-articlebody {
+  }
+  .salt-articlebody {
     padding-bottom: 10px;
-}
-.salt-articlepreview h3 {
+  }
+  .salt-articlepreview h3 {
     padding: 0px;
     margin: 0px;
     font-weight: 700;
     padding-bottom: 10px;
     font-size: 24px;
-}
-.salt-articlepreview:first-child {
+    color: rgb(231, 61, 30);
+    text-transform: uppercase;
+  }
+  .salt-articlepreview:first-child {
     border-top: none;
     padding-top: 0px;
-}
-.salt-articlepreview p {
+  }
+  .salt-articlepreview p {
     text-align: justify;
-}
-.salt-articlepreview img {
+    width: 90%;
+    margin: auto;
+    padding-top: 11px;
+    line-height: 21px;
+  }
+  .salt-articlepreview img {
     width: 100%;
     height: auto;
-}
-.salt-readmore {
+  }
+  .salt-readmore {
     display: inline-block;
     color: rgb(245, 248, 223);
-    background-color: rgb(12,8,36);
+    background-color: rgb(12, 8, 36);
     padding: 6px 18px;
     font-weight: 1;
-}
-.salt-readmore::after {
-    content:">>";
-}
-.salt-defaultarticle {
+  }
+  .salt-readmore::after {
+    content: ">>";
+  }
+  .salt-defaultarticle {
     background-color: rgb(245, 248, 223);
     padding-right: 10px;
-}
-.salt-defaultarticle .salt-articleheader {
+  }
+  .salt-defaultarticle .salt-articleheader {
     position: relative;
     margin: 0px;
     padding: 0px;
-}
-.salt-defaultarticle .salt-articleheader img {
+  }
+  .salt-defaultarticle .salt-articleheader img {
     width: 100%;
     height: auto;
     margin: 0px;
@@ -346,193 +577,203 @@ h1, h2, h3, h4, h5 {
     display: block;
     object-fit: cover;
     max-height: calc(100vh - 300px);
-}
-.salt-defaultarticle .salt-articleheader h1 {
+  }
+  .salt-defaultarticle .salt-articleheader h1 {
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    color: rgb(249,249,228);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(249, 249, 228);
     margin: 0px;
     padding: 10px 20px;
     box-sizing: border-box;
     font-weight: 700;
     font-size: 30;
     text-transform: uppercase;
-}
-.salt-articledetails {
+  }
+  .salt-articledetails {
     color: rgb(231, 61, 30);
-}
-.salt-articledetails {
+  }
+  .salt-articledetails {
     padding-top: 10px;
     font-weight: 600;
     font-size: 14px;
-}
-.salt-articledetails>*::after {
-    content:" // ";
-}
-.salt-articledetails>*:last-child::after {
+  }
+  .salt-articledetails > *::after {
+    content: " // ";
+  }
+  .salt-articledetails > *:last-child::after {
     content: "";
-}
-.salt-defaultarticle .salt-author {
+  }
+  .salt-defaultarticle .salt-author {
     padding-top: 15px;
-    border-bottom: 1px solid rgb(12,8,36);
+    border-bottom: 1px solid rgb(12, 8, 36);
     font-weight: 1;
-}
-.salt-defaultarticle .salt-articlemain {
+  }
+  .salt-defaultarticle .salt-articlemain {
     padding-left: 20px;
-    color: rgb(12,8,36);
-}
-.salt-whatwefightfor {
+    color: rgb(12, 8, 36);
+  }
+  .salt-whatwefightfor {
     float: right;
     width: 300px;
     color: rgb(255, 255, 255);
     background-color: rgb(36, 48, 113);
     padding: 10px 20px;
     margin: 0 0 10px 16px;
-}
-.salt-articlecategory a {
+  }
+  .salt-articlecategory a {
     text-decoration: none;
     color: inherit;
-}
-.salt-whatwefightfor h3 {
+  }
+  .salt-whatwefightfor h3 {
     font-weight: 700;
     font-size: 20px;
     padding: 0px;
     margin: 0px;
     padding-top: 4px;
-}
-.salt-whatwefightfor p {
+  }
+  .salt-whatwefightfor p {
     padding-left: 10px;
-    border-left: 1px solid rgb(249,249,228);
-}
-
-.salt-infoblock {
-    background: linear-gradient(190deg,rgba(12, 8, 36,0.6),rgba(231, 61, 30,1)), url("resources/headerimage.jpg");
+    border-left: 1px solid rgb(249, 249, 228);
+  }
+  
+  .salt-infoblock {
+    background: linear-gradient(
+        190deg,
+        rgba(12, 8, 36, 0.6),
+        rgba(231, 61, 30, 1)
+      ),
+      url("resources/headerimage.jpg");
     background-size: cover;
     background-position-y: center;
-    color: rgb(249,249,228);
-}
-.salt-infoblock h2 {
+    color: rgb(249, 249, 228);
+  }
+  .salt-infoblock h2 {
     margin: 0px;
     padding: 18px;
-    padding-right: 270px;
-    color: rgb(249,249,228);
-}
-.salt-infoblock p {
+    width: 80%;
+    color: rgb(249, 249, 228);
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  .salt-infoblock p {
     margin: 0px;
     padding: 20px;
     padding-top: 150px;
-    padding-right: 370px;
-}
-.salt-homeblock {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
+    width: 80%;
+    font-size: 1.4em;
+    line-height: 1.3em;
+  }
+  .salt-homeblock {
+    background-color: rgb(12, 8, 36);
+    color: rgb(249, 249, 228);
     padding: 20px;
     text-align: center;
-}
-.salt-homeblock h2 {
+  }
+  .salt-homeblock h2 {
     margin: 0px;
-    border-bottom: 1px solid rgb(249,249,228);
+    border-bottom: 1px solid rgb(249, 249, 228);
     text-align: left;
-}
-.salt-upcomingevents ul {
+  }
+  .salt-upcomingevents ul {
     padding: 0px;
     margin: 0px;
     text-align: left;
-}
-.salt-event {
+  }
+  .salt-event {
     list-style-type: none;
     height: 120px;
     overflow: hidden;
     margin: 20px 0px;
-}
-.salt-event a {
+  }
+  .salt-event a {
     text-decoration: none;
     color: inherit;
-}
-.salt-event h3 {
+  }
+  .salt-event h3 {
     margin: 0px;
     padding: 0px;
     font-size: 1.2em;
     padding-bottom: 8px;
-}
-.salt-event p {
+  }
+  .salt-event p {
     margin: 0px;
     padding: 0px;
     font-weight: 1;
-}
-.salt-event img {
+  }
+  .salt-event img {
     height: 100%;
     width: 360px;
     float: right;
     object-fit: cover;
-}
-.salt-eventdate {
+  }
+  .salt-eventdate {
     color: rgb(231, 61, 30);
     padding-bottom: 7px;
-}
-.salt-moreevents {
+  }
+  .salt-moreevents {
     text-decoration: none;
     padding: 10px;
     color: rgb(231, 61, 30);
     font-weight: 700;
     font-size: 24px;
-}
-.salt-international {
+  }
+  .salt-international {
     background-color: rgb(231, 61, 30);
-}
-.salt-international h2 {
+  }
+  .salt-international h2 {
     text-align: right;
-}
-.salt-newsblock {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
+  }
+  .salt-newsblock {
+    background-color: rgb(12, 8, 36);
+    color: rgb(249, 249, 228);
     margin: 0px;
     padding: 10px;
     min-height: calc(100vh - 300px);
     list-style-type: none;
-}
-.salt-newsitem a {
+  }
+  .salt-newsitem a {
     text-decoration: none;
     color: inherit;
-}
-.salt-newsitem {
-    background-color: rgb(12,8,36);
-    color: rgb(249,249,228);
+  }
+  .salt-newsitem {
+    background-color: rgb(12, 8, 36);
+    color: rgb(249, 249, 228);
     padding: 10px;
     margin: 0px;
     display: inline-block;
     width: 50%;
     box-sizing: border-box;
-    vertical-align:top;
-}
-.salt-newsitem h3 {
+    vertical-align: top;
+  }
+  .salt-newsitem h3 {
     margin: 0px;
     padding: 0px;
-}
-.salt-error {
+  }
+  .salt-error {
     margin-top: 0px;
-}
-.salt-newsitem img {
+  }
+  .salt-newsitem img {
     width: 250px;
     float: left;
     padding-right: 10px;
     height: 150px;
     object-fit: cover;
-}
-.salt-newsitem:nth-child(even) img {
+  }
+  .salt-newsitem:nth-child(even) img {
     float: right;
     padding-right: 0px;
     padding-left: 10px;
-}
-.salt-newsitem .salt-articledetails {
+  }
+  .salt-newsitem .salt-articledetails {
     font-weight: 1;
-}
-.salt-newsitem .salt-author {
+  }
+  .salt-newsitem .salt-author {
     font-weight: 700;
-}
+  }
+  
 .salt-articlebody img {
     width: 100%;
 }
