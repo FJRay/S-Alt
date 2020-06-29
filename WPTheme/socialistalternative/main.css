@@ -97,6 +97,102 @@ h1, h2, h3, h4, h5 {
     width: 33%;
     vertical-align: top;
 }
+
+@media (min-width: 992px) {
+  .saltAboutContainer .wp-block-group__inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wp-image-102 {
+    width: 100%;
+  }
+
+  .saltAboutHeader {
+    font-size: 3em;
+    margin-top: 28px;
+  }
+
+  .saltAboutContainer .wp-block-image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: -152px;
+  }
+
+  .saltAboutParagraphs {
+    margin-right: 20px;
+  }
+
+  .saltAboutParagraphs .wp-block-group__inner-container {
+    display: inline;
+  }
+
+  .saltPoliciesHeader {
+    color: rgb(12, 8, 36);
+    font-size: 4em;
+    margin: 20px 20px 20px 50px;
+  }
+
+  .saltAboutPageSubHeading {
+    background-color: rgb(52, 83, 120, 0.6);
+    padding: 6px 68px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .saltPolicies .alignright {
+    float: right;
+    margin: -70px 0 10px 10px;
+    z-index: 0;
+  }
+
+  .saltPolicies img {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .saltPolicies li {
+    padding: 10px 10px;
+    margin: 0 40px 0 20px;
+  }
+}
+
+/* End of 'About' */
+
+/* Podcast page stylings */
+
+.saltPodcast {
+  margin-top: 70px;
+}
+
+.saltPodcast p {
+  margin-top: 50px;
+}
+
+.podcastLogos {
+  width: max-content;
+  margin: auto;
+}
+
+.podcastLogos .wp-block-group__inner-container {
+  display: flex;
+}
+
+.podcastLogos .wp-block-image {
+  margin: 20px !important;
+}
+
+.podcastLogos img {
+  display: block;
+  margin: auto;
+}
+
+
+.podcastLogos .is-resized>figcaption {
+  text-align: center;}
+
 @media only screen and (max-width: 950px) {
     .salt-mainfooter>* {
         display: block;
@@ -188,6 +284,8 @@ h1, h2, h3, h4, h5 {
     width: calc(100% - 350px);
 }
 .salt-sidebar {
+  background-color: rgb(245, 248, 223);
+  border-left: rgb(12, 8, 36) 3px solid;
     width: 350px;
     background-color: rgb(245, 248, 223);
 }
