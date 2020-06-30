@@ -411,6 +411,32 @@ div .wpforms-field-medium {
 
 /* End of 'About' */
 
+/* Branch Directory */
+
+.salt-directory {
+  width: 50%;
+  margin: 60px auto;
+}
+
+.salt-directory h3 {
+  border-bottom: black solid 1px;
+}
+
+.salt-directory .socialMediaLogos {
+  display: flex;
+}
+
+.salt-directory .socialMediaLogos .wp-block-group__inner-container {
+  display: inline-flex;
+  margin-bottom: -20px;
+}
+
+.salt-directory .socialMediaLogos .wp-block-image {
+  margin-right: 25px;
+}
+
+/* End of Branch Directory */
+
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
     display: block;
@@ -721,8 +747,12 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 .salt-international {
-  background: rgb(246,219,196);
-  background: linear-gradient(144deg, rgba(246,219,196,1) 0%, rgba(12,8,36,1) 100%);
+  background: rgb(246, 219, 196);
+  background: linear-gradient(
+    144deg,
+    rgba(246, 219, 196, 1) 0%,
+    rgba(12, 8, 36, 1) 100%
+  );
 }
 .salt-international h2 {
   text-align: right;
