@@ -314,12 +314,12 @@ div .wpforms-field-medium {
   }
 
   .saltDonate h2 {
-margin: 40px 0;
+    margin: 40px 0;
   }
 
   .saltDonateButton {
-    margin: 40px;}
-
+    margin: 40px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
