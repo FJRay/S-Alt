@@ -424,6 +424,7 @@ div .wpforms-field-medium {
 
 .salt-directory .socialMediaLogos {
   display: flex;
+  float: left;
 }
 
 .salt-directory .socialMediaLogos .wp-block-group__inner-container {
@@ -433,6 +434,10 @@ div .wpforms-field-medium {
 
 .salt-directory .socialMediaLogos .wp-block-image {
   margin-right: 25px;
+}
+
+.salt-directory.wp-block-image .aligncenter {
+  margin-right: 0;
 }
 
 /* End of Branch Directory */
