@@ -74,6 +74,8 @@ p {
   color: rgb(249, 249, 228);
   font-weight: 700;
   font-size: 18px;
+  z-index: 2;
+  position: relative;
 }
 .salt-altcolors .salt-mainheader nav {
   background-color: rgb(231, 61, 30);
