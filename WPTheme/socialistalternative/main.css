@@ -721,11 +721,17 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 .salt-international {
-  background-color: rgb(231, 61, 30);
+  background: rgb(246,219,196);
+  background: linear-gradient(144deg, rgba(246,219,196,1) 0%, rgba(12,8,36,1) 100%);
 }
 .salt-international h2 {
   text-align: right;
 }
+
+.salt-international .wp-block-image {
+  padding-bottom: 40px;
+}
+
 .salt-newsblock {
   background-color: rgb(12, 8, 36);
   color: rgb(249, 249, 228);
