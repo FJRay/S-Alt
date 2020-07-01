@@ -74,6 +74,8 @@ p {
   color: rgb(249, 249, 228);
   font-weight: 700;
   font-size: 18px;
+  z-index: 2;
+  position: relative;
 }
 .salt-altcolors .salt-mainheader nav {
   background-color: rgb(231, 61, 30);
@@ -612,10 +614,10 @@ div .wpforms-field-medium {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(12, 8, 36, 0.5);
   color: rgb(249, 249, 228);
   margin: 0px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 30;
@@ -641,8 +643,11 @@ div .wpforms-field-medium {
   font-weight: 1;
 }
 .salt-defaultarticle .salt-articlemain {
-  padding-left: 20px;
+  margin: 0 40px;
   color: rgb(12, 8, 36);
+}
+.salt-articlemain p {
+  margin: 16px 0;
 }
 .salt-whatwefightfor {
   float: right;
