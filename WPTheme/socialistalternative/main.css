@@ -9,12 +9,12 @@ html {
 
 h1,
 h2 {
-  font-family: 'Candal', sans-serif;
+  font-family: "Candal", sans-serif;
   font-size: 2.5rem;
 }
 
 h3 {
-  font-family: 'Candal', sans-serif;
+  font-family: "Candal", sans-serif;
   font-size: 1.5rem;
 }
 h4 {
@@ -183,8 +183,6 @@ figcaption {
 
 /* Footer */
 
-
-
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
     display: block;
@@ -332,7 +330,6 @@ div .wpforms-field-medium {
   z-index: -1;
   position: relative;
   margin-left: -47px;
-
 }
 
 .saltAboutHeader {
@@ -436,8 +433,6 @@ div .wpforms-field-medium {
 }
 
 @media (min-width: 992px) {
-
-
   .saltAboutParagraphs .wp-block-group__inner-container {
     display: inline;
   }
@@ -462,7 +457,7 @@ div .wpforms-field-medium {
   }
 
   .saltPolicies img {
-      margin-top: -12px;
+    margin-top: -12px;
   }
 
   .saltPolicies li {
