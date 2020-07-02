@@ -429,8 +429,6 @@ div .wpforms-field-medium {
     margin-left: 0px;
   }
 
-  
-
   .wp-block-image .alignright {
     float: right !important;
   }
@@ -451,7 +449,7 @@ div .wpforms-field-medium {
 
   .saltPoliciesHeader {
     color: rgb(12, 8, 36);
-    font-size: 4em;
+    font-size: 3em;
     margin: 20px 20px 20px 50px;
   }
 
@@ -469,8 +467,7 @@ div .wpforms-field-medium {
   }
 
   .saltPolicies img {
-    width: 300px;
-    margin-right: 20px;
+      margin-top: -12px;
   }
 
   .saltPolicies li {
