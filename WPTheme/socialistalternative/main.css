@@ -658,9 +658,8 @@ div .wpforms-field-medium {
   color: rgb(249, 249, 228);
 }
 .salt-infoblock h2 {
-  margin: 0px;
+  margin: 0px 0 0 20%;
   padding: 18px;
-  width: 80%;
   color: rgb(249, 249, 228);
   font-size: 2em;
   letter-spacing: 1px;
