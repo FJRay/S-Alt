@@ -399,7 +399,6 @@ div .wpforms-field-medium {
   }
 
   .saltAboutHeader {
-    color: blue;
     font-size: 3em !important;
     margin-top: 34px;
     margin-right: 20px;
@@ -437,9 +436,7 @@ div .wpforms-field-medium {
 }
 
 @media (min-width: 992px) {
-  .saltAboutHeader {
-    color: red;
-  }
+
 
   .saltAboutParagraphs .wp-block-group__inner-container {
     display: inline;
