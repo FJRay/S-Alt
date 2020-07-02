@@ -339,7 +339,7 @@ div .wpforms-field-medium {
 }
 
 .saltAboutHeader {
-  font-size: 2rem !important;
+  font-size: 2.2rem !important;
   text-align: right;
   color: rgb(12, 8, 36);
   position: relative;
@@ -353,10 +353,10 @@ div .wpforms-field-medium {
 }
 
 .saltPoliciesHeader {
-  color: rgb(12, 8, 36);
-  font-size: 2rem;
-  margin: auto;
-  width: max-content;
+  margin-left: 20px;
+  margin-right: auto;
+  max-width: 90%;
+  font-size: 2.2rem;
 }
 
 .saltAboutPageSubHeading {
