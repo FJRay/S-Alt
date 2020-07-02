@@ -150,7 +150,7 @@ figcaption {
   margin-bottom: 5px;
 }
 .salt-mainheader nav {
-  display:none;
+  display: none;
   background-color: rgb(12, 8, 36);
   color: rgb(249, 249, 228);
   font-weight: 700;
@@ -184,9 +184,8 @@ figcaption {
 /* Footer */
 
 .salt-mainfooter {
-  display:none;
+  display: none;
 }
-
 
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
@@ -327,7 +326,7 @@ div .wpforms-field-medium {
 /* Styling for 'About' page*/
 
 .saltAboutContainer .wp-block-image {
-  margin-top: -229px;
+  margin-top: -109px;
 }
 
 .wp-image-102 {
@@ -345,6 +344,7 @@ div .wpforms-field-medium {
   position: relative;
   margin-top: 40px;
   margin-right: 23px;
+  max-width: 94%;
 }
 
 .saltAboutParagraphs {
@@ -377,7 +377,6 @@ div .wpforms-field-medium {
   float: none !important;
 }
 
-
 .saltPolicies img {
   float: right;
   margin-left: 10px;
@@ -403,13 +402,13 @@ div .wpforms-field-medium {
 
   .saltAboutHeader {
     color: blue;
-    font-size: 3em;
+    font-size: 3em !important;
     margin-top: 34px;
-    margin-right: auto;
+    margin-right: 20px;
     margin-bottom: 64px;
     margin-left: auto;
-    text-align: center;
-    max-width: 90%;
+    text-align: right;
+    max-width: 95%;
   }
 
   .saltAboutContainer .wp-block-image {
@@ -418,20 +417,26 @@ div .wpforms-field-medium {
 
   .saltAboutParagraphs {
     margin-right: 0px;
-    margin-left: 196px;
+    margin-left: 220px;
   }
-
 
   .saltAboutParagraphs .wp-block-group__inner-container {
     display: inline;
   }
 
   .saltPoliciesHeader {
-    font-size: 4em;
+    font-size: 3rem;
+    margin-left: 0px;
+  }
+
+  
+
+  .wp-block-image .alignright {
+    float: right !important;
   }
 
   .saltPolicies img {
-    max-width: none;
+    margin-top: -83px;
   }
 }
 
@@ -440,8 +445,6 @@ div .wpforms-field-medium {
     color: red;
   }
 
-
-  
   .saltAboutParagraphs .wp-block-group__inner-container {
     display: inline;
   }
