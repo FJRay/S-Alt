@@ -150,7 +150,6 @@ figcaption {
   margin-bottom: 5px;
 }
 .salt-mainheader nav {
-  display: none;
   background-color: rgb(12, 8, 36);
   color: rgb(249, 249, 228);
   font-weight: 700;
@@ -183,9 +182,7 @@ figcaption {
 
 /* Footer */
 
-.salt-mainfooter {
-  display: none;
-}
+
 
 @media only screen and (max-width: 950px) {
   .salt-mainfooter > * {
@@ -334,7 +331,7 @@ div .wpforms-field-medium {
   z-index: -1;
   position: relative;
   margin-left: -47px;
-  opacity: 0.5;
+
 }
 
 .saltAboutHeader {
