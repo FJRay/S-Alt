@@ -43,8 +43,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: rgb(245, 248, 223);
-  position: fixed;
-  top: 0;
+
 }
 
 .size-medium {
@@ -113,8 +112,10 @@ figcaption {
   background-size: cover;
   position: relative;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin-top: 45px;
+  grid-template-columns: 3fr;
+  grid-auto-columns: minmax(auto, 25%);
+  grid-auto-flow: column;
+  width: 100vw;
 
 }
 .salt-mainheader h1 {
@@ -166,9 +167,6 @@ figcaption {
   right: 0;
 }
 
-
-
-
 .salt-mainheader nav .menu-close-btn img {
   margin: 45px 35px 0 0;
   float: right;
@@ -190,9 +188,7 @@ figcaption {
 .salt-mainheader nav li:hover {
   color: yellow;
 }
-.salt-mainheader nav li:active {
-  text-decoration: underline;
-}
+
 
 .salt-mainheader nav a {
   color: inherit;
@@ -236,6 +232,27 @@ figcaption {
 }
 
 @media (min-width: 768px) {
+
+  .menu-icon {
+    display: none;
+  }
+  .menu-close-btn {
+    display: none;
+  }
+
+  .salt-mainheader {
+    display: block;
+  }
+
+  .salt-mainheader .menu-btn ~ .menu, .salt-mainheader .menu-btn ~ .menu {
+    right: 0;
+    position: relative;
+    height: fit-content;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+  }
+
   .salt-mainheader nav li:hover .sub-menu {
     max-height: 100vw;
   }
@@ -272,12 +289,6 @@ figcaption {
     border-bottom: 1px solid #959595;
   }
 
-  .salt-mainheader {
-    background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
-      url("resources/headerimage.jpg");
-    background-size: cover;
-    position: relative;
-  }
   .salt-mainheader h1 {
     text-align: center;
     margin: 0px;
@@ -287,36 +298,14 @@ figcaption {
     height: 120px;
     margin-top: 10px;
     margin-bottom: 5px;
+    width: auto;
   }
   .salt-mainheader nav {
-    background-color: rgb(12, 8, 36);
-    color: rgb(249, 249, 228);
-    font-weight: 700;
-    font-size: 18px;
-    z-index: 2;
+    display: inline-block;
     position: relative;
   }
-  .salt-altcolors .salt-mainheader nav {
-    background-color: rgb(231, 61, 30);
-  }
-  .salt-mainheader nav ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .salt-mainheader nav li {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    padding: 6px 30px;
-    text-transform: uppercase;
-  }
-  .salt-mainheader nav a {
-    color: inherit;
-    text-decoration: none;
-    white-space: nowrap;
+
+
   }
 }
 
