@@ -98,7 +98,56 @@ figcaption {
   max-width: 100%;
 }
 
+.salt-sidebar {
+  display: inline-block;
+  vertical-align: top;
+}
+
 /* Header and navbar */
+
+.salt-mainheader {
+  background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
+    url("resources/headerimage.jpg");
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.salt-mainheader h1 {
+  margin: 0px;
+  padding: 7px;
+}
+.salt-mainheader h1 img {
+  width: 80%;
+  margin: 18px auto 10px 30px;
+}
+
+.hamburger {
+width: 50%;
+margin: auto 40px auto auto;
+}
+
+.salt-mainheader nav {
+  display: none;
+  background-color: rgb(12, 8, 36);
+  color: rgb(249, 249, 228);
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 2;
+  position: relative;
+}
+.salt-mainsearch {
+  display: none;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+}
+.salt-mainsearch input {
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #959595;
+}
 .salt-mainheader nav li:hover .sub-menu {
   max-height: 100vw;
 }
@@ -116,48 +165,6 @@ figcaption {
 .salt-mainheader nav .sub-menu li {
   display: block;
   padding: 11px 23px;
-}
-
-.salt-sidebar {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.salt-mainsearch {
-  position: absolute;
-  top: 19px;
-  right: 19px;
-}
-.salt-mainsearch input {
-  background: none;
-  border: none;
-  color: #fff;
-  border-bottom: 1px solid #959595;
-}
-
-.salt-mainheader {
-  background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
-    url("resources/headerimage.jpg");
-  background-size: cover;
-  position: relative;
-}
-.salt-mainheader h1 {
-  text-align: center;
-  margin: 0px;
-  padding: 7px;
-}
-.salt-mainheader h1 img {
-  height: 120px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.salt-mainheader nav {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
-  font-weight: 700;
-  font-size: 18px;
-  z-index: 2;
-  position: relative;
 }
 .salt-altcolors .salt-mainheader nav {
   background-color: rgb(231, 61, 30);

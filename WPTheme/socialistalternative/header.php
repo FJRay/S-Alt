@@ -15,6 +15,7 @@
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/mainlogo.png" alt="Socialist Alternative">
                 </a>    
             </h1>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/hamburger.png" alt="Menu icon" class='hamburger'>
             <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
 				<input name="search" placeholder="Search...">
 			</form>
