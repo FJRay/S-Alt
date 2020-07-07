@@ -25,7 +25,9 @@
 				<input name="search" placeholder="Search...">
 			</form>
             <nav class='menu'>
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/cross-yellow.svg" alt="Close menu icon" class='cross'>
+                <label for="menu-btn" class='menu-close-btn'> 
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/cross-yellow.svg" alt="Close menu icon" > 
+                </label>
                 <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
             </nav>
         </header>

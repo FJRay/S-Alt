@@ -129,7 +129,6 @@ figcaption {
 }
 
 .salt-mainheader nav {
-
 }
 
 .menu-btn {
@@ -146,11 +145,12 @@ figcaption {
   width: 50%;
 }
 
-.salt-mainheader  .menu-btn ~ .menu {
-  display: none;}
+.salt-mainheader .menu-btn ~ .menu {
+  display: none;
+}
 
-.salt-mainheader  .menu-btn:checked ~ .menu {
-   display: block;
+.salt-mainheader .menu-btn:checked ~ .menu {
+  display: block;
   background-color: rgb(12, 8, 36);
   color: rgb(249, 249, 228);
   font-weight: 700;
@@ -162,10 +162,11 @@ figcaption {
   box-shadow: -11px 0px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
-.salt-mainheader nav .cross {
-  margin: 35px 35px 0 0;
-  width: 15%;
+
+.salt-mainheader nav .menu-close-btn img {
+  margin: 45px 35px 0 0;
   float: right;
+  width: 15%;
 }
 
 .salt-mainheader nav ul {
