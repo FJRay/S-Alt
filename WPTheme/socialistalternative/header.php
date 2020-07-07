@@ -15,11 +15,17 @@
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/mainlogo.png" alt="Socialist Alternative">
                 </a>    
             </h1>
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/hamburger.png" alt="Menu icon" class='hamburger'>
+            
+            <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+            <label class="menu-icon" for="menu-btn">
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/hamburger.png" alt="Menu button">
+            </label>
+
             <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
 				<input name="search" placeholder="Search...">
 			</form>
-            <nav>
+            <nav class='menu'>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/cross-yellow.svg" alt="Close menu icon" class='cross'>
                 <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
             </nav>
         </header>
