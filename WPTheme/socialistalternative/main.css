@@ -68,6 +68,11 @@ figcaption {
   font-weight: lighter;
 }
 
+.wp-block-image img {
+  height: 100%;
+  width: 100%;
+}
+
 .salt-cat-title {
   margin: 0px;
   color: #fff;
