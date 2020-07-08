@@ -183,7 +183,7 @@ figcaption {
 .salt-mainmenu ul {
   list-style-type: none;
   padding: 0px;
-  margin: 70px 25px;
+  margin: 70px 25px 10px 25px;
 }
 .salt-mainmenu li {
   list-style-type: none;
@@ -211,17 +211,21 @@ figcaption {
   background-color: rgb(231, 61, 30);
 }
 
+.salt-navsearch {
+  display: block;
+  margin: 0 25px 20px;
+}
+
 .salt-mainsearch {
   display: none;
-  position: absolute;
-  top: 19px;
-  right: 19px;
 }
-.salt-mainsearch input {
+
+.searchbar input {
   background: none;
   border: none;
   color: #fff;
-  border-bottom: 1px solid #959595;
+  border-bottom: 2px solid #959595;
+  font-size: 0.8rem;
 }
 
 .salt-mainmenu nav .sub-menu {
@@ -244,9 +248,17 @@ figcaption {
     display: none;
   }
 
-  .salt-mainheader {
-    display: block;
+  .salt-navsearch {
+    display: none;
   }
+
+  .salt-mainsearch {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+
 
   .salt-mainsearch {
     display: block;
