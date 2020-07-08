@@ -112,9 +112,7 @@ figcaption {
   background-size: cover;
   position: relative;
   display: grid;
-  grid-template-columns: 3fr;
-  grid-auto-columns: minmax(auto, 25%);
-  grid-auto-flow: column;
+  grid-template-columns: 3fr 1fr;
   width: 100vw;
 
 }
@@ -162,7 +160,6 @@ figcaption {
   z-index: 2;
 }
 
-
 .salt-mainheader .menu-btn:checked ~ .menu {
   right: 0;
 }
@@ -196,24 +193,6 @@ figcaption {
   white-space: nowrap;
 }
 
-.salt-mainheader nav li:hover .sub-menu {
-  max-height: 100vw;
-}
-.salt-mainheader nav .sub-menu {
-  max-height: 0px;
-  transition: max-height 0.4s;
-  position: absolute;
-  z-index: 99;
-  background-color: #0c0824;
-  display: block;
-  margin-left: -23px;
-  overflow: hidden;
-  margin-top: 6px;
-}
-.salt-mainheader nav .sub-menu li {
-  display: block;
-  padding: 11px 23px;
-}
 .salt-altcolors .salt-mainheader nav {
   background-color: rgb(231, 61, 30);
 }
@@ -231,6 +210,15 @@ figcaption {
   border-bottom: 1px solid #959595;
 }
 
+.salt-mainheader nav .sub-menu {
+
+  position: relative;
+  z-index: 99;
+  background-color: #0c0824;
+  display: block;
+  margin-top: 6px;
+}
+
 @media (min-width: 768px) {
 
   .menu-icon {
@@ -242,6 +230,12 @@ figcaption {
 
   .salt-mainheader {
     display: block;
+  }
+
+  .salt-mainheader nav ul {
+    margin: 0px 70px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .salt-mainheader .menu-btn ~ .menu, .salt-mainheader .menu-btn ~ .menu {
@@ -306,7 +300,7 @@ figcaption {
   }
 
 
-  }
+  
 }
 
 /* End header and navbar */
