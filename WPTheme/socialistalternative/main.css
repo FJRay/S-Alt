@@ -143,6 +143,7 @@ figcaption {
   right: 30px;
   color: rgb(245, 248, 223);
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .menu-close-btn {
@@ -150,6 +151,7 @@ figcaption {
   margin: 30px 30px 0 0;
   float: right;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 .salt-mainmenu {
@@ -191,14 +193,13 @@ figcaption {
   padding: 10px 0px;
   text-transform: uppercase;
 }
-.salt-mainmenu li:hover {
+.salt-mainmenu li:hover, .salt-mainmenu .sub-menu li:hover {
   color: yellow;
 }
 
 .salt-mainmenu .sub-menu li {
   color: rgb(249, 249, 228);
 }
-
 
 .salt-mainmenu a {
   color: inherit;
@@ -224,7 +225,6 @@ figcaption {
 }
 
 .salt-mainmenu nav .sub-menu {
-  position: relative;
   z-index: 99;
   display: block;
   margin-top: 6px;
@@ -247,6 +247,10 @@ figcaption {
 
   .salt-mainheader {
     display: block;
+  }
+
+  .salt-mainmenu {
+    position: relative;
   }
 
   .salt-mainmenu nav ul {
