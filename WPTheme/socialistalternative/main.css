@@ -173,7 +173,7 @@ figcaption {
 .salt-mainheader nav ul {
   list-style-type: none;
   padding: 0px;
-  margin: 35px 25px;
+  margin: 70px 25px;
 }
 .salt-mainheader nav li {
   list-style-type: none;
@@ -211,12 +211,16 @@ figcaption {
 }
 
 .salt-mainheader nav .sub-menu {
-
   position: relative;
   z-index: 99;
-  background-color: #0c0824;
   display: block;
   margin-top: 6px;
+  margin-bottom: 6px;
+  border-left: solid 3px #959595;
+  padding-left: 10px;
+  margin-left: 15px;
+  text-transform: capitalize;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 768px) {
