@@ -44,7 +44,6 @@ body {
   margin: 0px;
   background-color: rgb(245, 248, 223);
   overflow-x: hidden;
-
 }
 
 .size-medium {
@@ -115,7 +114,6 @@ figcaption {
   display: grid;
   grid-template-columns: 3fr 1fr;
   width: 100vw;
-
 }
 .salt-mainheader h1 {
   margin: 0px;
@@ -193,7 +191,8 @@ figcaption {
   padding: 10px 0px;
   text-transform: uppercase;
 }
-.salt-mainmenu li:hover, .salt-mainmenu .sub-menu li:hover {
+.salt-mainmenu li:hover,
+.salt-mainmenu .sub-menu li:hover {
   color: yellow;
 }
 
@@ -237,7 +236,6 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-
   .menu-icon {
     display: none;
   }
@@ -246,6 +244,10 @@ figcaption {
   }
 
   .salt-mainheader {
+    display: block;
+  }
+
+  .salt-mainsearch {
     display: block;
   }
 
@@ -320,9 +322,6 @@ figcaption {
     display: inline-block;
     position: relative;
   }
-
-
-  
 }
 
 /* End header and navbar */
