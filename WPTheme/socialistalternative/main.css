@@ -139,10 +139,15 @@ figcaption {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  color: rgb(245, 248, 223);
+  font-size: 2.5rem;
 }
 
-.menu-icon img {
-  width: 50%;
+.menu-close-btn {
+  color: rgb(245, 248, 223);
+  margin: 15px 35px 0 0;
+  float: right;
+  font-size: 2.5rem;
 }
 
 .salt-mainheader .menu-btn ~ .menu, .salt-mainheader .menu-btn ~ .menu {
@@ -164,10 +169,8 @@ figcaption {
   right: 0;
 }
 
-.salt-mainheader nav .menu-close-btn img {
-  margin: 45px 35px 0 0;
-  float: right;
-  width: 15%;
+.salt-mainheader nav .menu-close-btn i {
+
 }
 
 .salt-mainheader nav ul {

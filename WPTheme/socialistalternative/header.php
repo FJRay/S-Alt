@@ -6,6 +6,7 @@
         <title>Socialist Alternative</title>
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Candal&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700;1,800&display=swap" rel="stylesheet">
+        <script defer src="<?php echo get_bloginfo('template_directory'); ?>/resources/fontawesome/js/all.js"></script>
         <?php wp_head(); ?>
     </head>
     <body>
@@ -18,7 +19,7 @@
             
             <input class="menu-btn" type="checkbox" id="menu-btn" /> 
             <label class="menu-icon" for="menu-btn">
-            <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/hamburger.png" alt="Menu button">
+            <i class="fas fa-bars"></i>
             </label>
 
             <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
@@ -26,7 +27,7 @@
 			</form>
             <nav class='menu'>
                 <label for="menu-btn" class='menu-close-btn'> 
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/cross-yellow.svg" alt="Close menu icon" > 
+                <i class="fas fa-times"></i>
                 </label>
                 <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
             </nav>
