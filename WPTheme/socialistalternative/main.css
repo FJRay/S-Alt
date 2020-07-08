@@ -120,7 +120,7 @@ figcaption {
   padding: 7px;
 }
 .salt-mainheader h1 img {
-  width: 80%;
+  width: 100%;
   margin: 18px auto 10px 30px;
 }
 
@@ -165,7 +165,8 @@ figcaption {
   right: calc(-50% - 18px);
   transition: right 0.5s linear;
   position: absolute;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   box-shadow: -11px 0px 16px 0px rgba(0, 0, 0, 0.75);
   width: 50%;
   display: block;
@@ -265,6 +266,7 @@ figcaption {
     right: 0;
     position: relative;
     height: fit-content;
+    min-height: 0;
     box-shadow: none;
     width: 100%;
     display: block;
