@@ -186,6 +186,10 @@ figcaption {
   color: yellow;
 }
 
+.salt-mainheader .sub-menu li {
+  color: rgb(249, 249, 228);
+}
+
 
 .salt-mainheader nav a {
   color: inherit;
@@ -216,7 +220,7 @@ figcaption {
   display: block;
   margin-top: 6px;
   margin-bottom: 6px;
-  border-left: solid 3px #959595;
+  border-left: solid 3px rgb(249, 249, 228);
   padding-left: 10px;
   margin-left: 15px;
   text-transform: capitalize;
@@ -264,6 +268,7 @@ figcaption {
     margin-left: -23px;
     overflow: hidden;
     margin-top: 6px;
+    border: none;
   }
   .salt-mainheader nav .sub-menu li {
     display: block;
