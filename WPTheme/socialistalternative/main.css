@@ -241,6 +241,10 @@ figcaption {
 }
 
 @media (min-width: 768px) {
+
+  .salt-mainheader {
+    display: block;
+  }
   .menu-icon {
     display: none;
   }
@@ -327,10 +331,10 @@ figcaption {
     padding: 7px;
   }
   .salt-mainheader h1 img {
-    height: 120px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    width: auto;
+    width: 30%;
+    min-width: 330px;
+    margin: 0;
+    height: auto;
   }
   .salt-mainmenu nav {
     display: inline-block;
