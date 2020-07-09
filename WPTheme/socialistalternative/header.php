@@ -6,6 +6,7 @@
         <title>Socialist Alternative</title>
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Candal&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700;1,800&display=swap" rel="stylesheet">
+        <script defer src="<?php echo get_bloginfo('template_directory'); ?>/resources/fontawesome/js/all.js"></script>
         <?php wp_head(); ?>
     </head>
     <body>
