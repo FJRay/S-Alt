@@ -14,19 +14,19 @@
                 </a>
             </div><div class="salt-socialblock">
                 <div class="salt-sociallinks">
-                    <a href="index.html">
+                    <a href="https://www.facebook.com/SocialistAlternativeEW">
                     <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="index.html">
+                    <a href="https://www.instagram.com/socialistalternative.ews/?hl=en">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="index.html">
+                    <a href="https://www.youtube.com/channel/UCRIuohfMUVSCYUWwOL6jzEQ">
                         <i class="fab fa-youtube"></i>                    
                     </a>
-                    <a href="index.html">
+                    <a href="https://twitter.com/SocialistAltEWS">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="index.html">
+                    <a href="https://www.tiktok.com/@socialist_vids">
                         <i class="fab fa-tiktok"></i>
                     </a>
                 </div>
