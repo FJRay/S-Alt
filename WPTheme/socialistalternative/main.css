@@ -220,6 +220,11 @@ figcaption {
   font-weight: 700;
   padding-bottom: 7px;
 }
+.salt-contactblock svg {
+vertical-align: middle;
+font-size: 1.3rem;
+}
+
 .salt-contactblock a span {
   display: inline-block;
   padding-top: 8px;
@@ -263,16 +268,13 @@ figcaption {
 }
 
 @media (min-width: 450px) {
-
   .salt-mainfooter {
 
     grid-template-columns: 2fr 1fr;
   }
-
   .salt-contactblock {
     width: 300px;
   }
-
   .salt-contactblock a span {
     font-size: 0.8rem;
   }

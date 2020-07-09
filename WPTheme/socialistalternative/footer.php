@@ -1,15 +1,15 @@
 </div>
         <footer class="salt-mainfooter">
             <a href="<?php echo get_bloginfo("wpurl"); ?>" class="salt-footerhome">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/mainlogo.png" alt="Socialist Alternative">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative">
             </a><div class="salt-contactblock">
                 <h2>CONTACT US</h2>
                 <a href="mailto:info@socialistalternative.net">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/email.png" alt="Socialist Alternative">
+                    <i class="far fa-envelope"></i>
                     <span>info@socialistalternative.net</span>
                 </a>
                 <a href="tel:07747444450">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/phone.png" alt="Socialist Alternative">
+                    <i class="fas fa-phone"></i>
                     <span>07747 4444 50</span>
                 </a>
             </div><div class="salt-socialblock">
