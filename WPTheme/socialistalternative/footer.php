@@ -15,16 +15,19 @@
             </div><div class="salt-socialblock">
                 <div class="salt-sociallinks">
                     <a href="index.html">
-                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-facebook-f"></i>
                     </a>
                     <a href="index.html">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/social/insta.png" alt="Socialist Alternative">
+                        <i class="fab fa-instagram"></i>
                     </a>
                     <a href="index.html">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/social/youtube.png" alt="Socialist Alternative">
+                        <i class="fab fa-youtube"></i>                    
                     </a>
                     <a href="index.html">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/social/twitter.png" alt="Socialist Alternative">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="index.html">
+                        <i class="fab fa-tiktok"></i>
                     </a>
                 </div>
             </div>
