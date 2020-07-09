@@ -16,11 +16,24 @@
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative">
                 </a>    
             </h1>
-            <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
+
+            <form class="salt-mainsearch searchbar" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
 				<input name="search" placeholder="Search...">
 			</form>
-            <nav>
-                <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
-            </nav>
         </header>
+        <div class="salt-mainmenu">
+            <input class="menu-btn" type="checkbox" id="menu-btn" /> 
+            <label class="menu-icon" for="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <nav class='menu'>
+                <label for="menu-btn" class='menu-close-btn'> 
+                    <i class="fas fa-times"></i>
+                </label>
+                <?php wp_nav_menu(array('theme_location' => 'main-navbar')); ?>
+                <form class="salt-navsearch searchbar" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
+				<input name="search" placeholder="Search...">
+			</form>
+            </nav>
+        </div>
         <div class="salt-bodycontainer">
