@@ -68,6 +68,11 @@ figcaption {
   font-weight: lighter;
 }
 
+.wp-block-image img {
+  height: 100%;
+  width: 100%;
+}
+
 .salt-cat-title {
   margin: 0px;
   color: #fff;
@@ -96,7 +101,10 @@ figcaption {
 .salt-fullwidth .salt-maincontent {
   margin: 0;
   max-width: 100%;
+  border: none;
 }
+
+
 
 /* Header and navbar */
 .salt-mainheader nav li:hover .sub-menu {
@@ -121,6 +129,17 @@ figcaption {
 .salt-sidebar {
   display: inline-block;
   vertical-align: top;
+
+}
+
+.salt-maincontent + .salt-sidebar {
+  border-left: 3px solid black;
+  margin: 10px 0;
+}
+
+.salt-nomargin + .salt-sidebar {
+  border-left: none;
+  margin: 0;
 }
 
 .salt-mainsearch {
