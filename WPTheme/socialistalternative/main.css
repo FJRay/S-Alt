@@ -134,12 +134,12 @@ figcaption {
   color: #fff;
   border-bottom: 1px solid #959595;
 }
-
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
     url("resources/headerimage.jpg");
   background-size: cover;
   position: relative;
+  display: none;
 }
 .salt-mainheader h1 {
   text-align: center;
@@ -186,24 +186,29 @@ figcaption {
 
 /* Footer */
 
-@media only screen and (max-width: 950px) {
-  .salt-mainfooter > * {
-    display: block;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-  }
+.salt-mainfooter {
+  background-color: rgb(12, 8, 36);
+  color: rgb(249, 249, 228);
+  min-height: 190px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 20px;
 }
+
+.salt-mainfooter > * {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
 .salt-footerhome img {
   width: 100%;
-  box-sizing: border-box;
-  padding: 30px 40px;
   max-height: 200px;
   object-fit: contain;
 }
 .salt-contactblock {
-  box-sizing: border-box;
-  padding-top: 35px;
+  padding-left: 15px;
 }
 .salt-contactblock a {
   display: block;
@@ -217,18 +222,18 @@ figcaption {
   padding-top: 8px;
   vertical-align: top;
   padding-left: 5px;
+  font-size: 0.7rem;
 }
 .salt-contactblock h2 {
-  padding: 0px;
-  font-size: 24px;
-  padding: 0px;
-  margin-top: 28px;
-  padding-bottom: 7px;
+  display: none;
 }
 .salt-contactblock a img {
   height: 30px;
   width: 30px;
   object-fit: contain;
+}
+.salt-socialblock {
+  grid-column: 1 / span 2;
 }
 .salt-socialblock img {
   height: 60px;
@@ -236,27 +241,38 @@ figcaption {
 .salt-sociallinks {
   display: flex;
   justify-content: space-between;
-  padding-top: 65px;
   box-sizing: border-box;
   padding-right: 20px;
 }
 
-.salt-mainfooter {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
-}
 .salt-altcolors .salt-mainfooter {
   background-color: rgb(231, 61, 30);
 }
-.salt-mainfooter {
-  min-height: 190px;
-}
-.salt-mainfooter > * {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  width: 33%;
-  vertical-align: top;
+
+
+@media (min-width: 768px) {
+  .salt-mainfooter > * {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .salt-footerhome img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .salt-contactblock h2 {
+    padding: 0px;
+    font-size: 24px;
+    padding: 0px;
+    margin-top: 28px;
+    padding-bottom: 7px;
+  }
 }
 
 /*  End footer */
@@ -538,14 +554,6 @@ div .wpforms-field-medium {
   }
 }
 
-@media only screen and (max-width: 950px) {
-  .salt-mainfooter > * {
-    display: block;
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-}
 
 .salt-infoblock {
   background: linear-gradient(

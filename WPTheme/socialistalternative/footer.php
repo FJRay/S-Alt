@@ -15,7 +15,7 @@
             </div><div class="salt-socialblock">
                 <div class="salt-sociallinks">
                     <a href="index.html">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/social/facebook.png" alt="Socialist Alternative">
+                    <i class="fab fa-facebook"></i>
                     </a>
                     <a href="index.html">
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/social/insta.png" alt="Socialist Alternative">
