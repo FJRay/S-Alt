@@ -207,9 +207,7 @@ figcaption {
   white-space: nowrap;
 }
 
-.salt-altcolors .salt-mainmenu nav {
-  background-color: rgb(231, 61, 30);
-}
+
 
 .salt-navsearch {
   display: block;
@@ -271,7 +269,9 @@ figcaption {
   .salt-mainmenu {
     position: relative;
   }
-
+  .salt-altcolors .salt-mainmenu .menu {
+    background-color: rgb(231, 61, 30);
+  }
   .salt-mainmenu nav ul {
     margin: 0px 70px;
     display: flex;
