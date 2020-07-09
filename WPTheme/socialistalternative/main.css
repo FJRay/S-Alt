@@ -69,6 +69,11 @@ figcaption {
   font-weight: lighter;
 }
 
+.wp-block-image img {
+  height: 100%;
+  width: 100%;
+}
+
 .salt-cat-title {
   margin: 0px;
   color: #fff;
@@ -97,11 +102,44 @@ figcaption {
 .salt-fullwidth .salt-maincontent {
   margin: 0;
   max-width: 100%;
+  border: none;
+}
+
+
+/* Header and navbar */
+.salt-mainheader nav li:hover .sub-menu {
+  max-height: 100vw;
+}
+.salt-mainheader nav .sub-menu {
+  max-height: 0px;
+  transition: max-height 0.4s;
+  position: absolute;
+  z-index: 99;
+  background-color: #0c0824;
+  display: block;
+  margin-left: -23px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.salt-mainheader nav .sub-menu li {
+  display: block;
+  padding: 11px 23px;
 }
 
 .salt-sidebar {
   display: inline-block;
   vertical-align: top;
+
+}
+
+.salt-maincontent + .salt-sidebar {
+  border-left: 3px solid black;
+  margin: 10px 0;
+}
+
+.salt-nomargin + .salt-sidebar {
+  border-left: none;
+  margin: 0;
 }
 
 /* Header and navbar */
