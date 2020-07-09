@@ -139,7 +139,6 @@ figcaption {
     url("resources/headerimage.jpg");
   background-size: cover;
   position: relative;
-  display: none;
 }
 .salt-mainheader h1 {
   text-align: center;

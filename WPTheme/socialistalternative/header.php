@@ -13,7 +13,7 @@
         <header class="salt-mainheader">
             <h1>
                 <a href="<?php echo get_bloginfo("wpurl"); ?>">
-                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/mainlogo.png" alt="Socialist Alternative">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative">
                 </a>    
             </h1>
             <form class="salt-mainsearch" action="<?php echo get_bloginfo("wpurl"); ?>" method="GET">
