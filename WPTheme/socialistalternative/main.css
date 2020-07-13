@@ -140,9 +140,12 @@ figcaption {
   border-left: none;
   margin: 0;
 }
+<<<<<<< HEAD
 
 /* Header and navbar */
 
+=======
+>>>>>>> 103849c631bc14ce8aef35cce12f08e038878255
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
     url("resources/headerimage.jpg");
