@@ -1147,7 +1147,7 @@ div .wpforms-field-medium {
   padding: 10px;
   margin: 0px;
   display: inline-block;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   vertical-align: top;
 }
@@ -1175,6 +1175,12 @@ div .wpforms-field-medium {
 }
 .salt-newsitem .salt-author {
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .salt-newsitem {
+    width: 50%;
+  }
 }
 
 /* End news page */
