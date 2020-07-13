@@ -129,7 +129,6 @@ figcaption {
 .salt-sidebar {
   display: inline-block;
   vertical-align: top;
-
 }
 
 .salt-maincontent + .salt-sidebar {
@@ -141,12 +140,9 @@ figcaption {
   border-left: none;
   margin: 0;
 }
-<<<<<<< HEAD
-=======
 
 /* Header and navbar */
 
->>>>>>> fred/master
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
     url("resources/headerimage.jpg");
