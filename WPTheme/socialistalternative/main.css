@@ -43,6 +43,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: rgb(245, 248, 223);
+  overflow-x: hidden;
 }
 
 .size-medium {
@@ -66,6 +67,11 @@ figcaption {
 .wp-block-quote p {
   font-size: 1.2rem;
   font-weight: lighter;
+}
+
+.wp-block-image img {
+  height: 100%;
+  width: 100%;
 }
 
 .salt-cat-title {
@@ -96,7 +102,9 @@ figcaption {
 .salt-fullwidth .salt-maincontent {
   margin: 0;
   max-width: 100%;
+  border: none;
 }
+
 
 /* Header and navbar */
 .salt-mainheader nav li:hover .sub-menu {
@@ -121,64 +129,258 @@ figcaption {
 .salt-sidebar {
   display: inline-block;
   vertical-align: top;
+
 }
 
-.salt-mainsearch {
-  position: absolute;
-  top: 19px;
-  right: 19px;
+.salt-maincontent + .salt-sidebar {
+  border-left: 3px solid black;
+  margin: 10px 0;
 }
-.salt-mainsearch input {
-  background: none;
-  border: none;
-  color: #fff;
-  border-bottom: 1px solid #959595;
+
+.salt-nomargin + .salt-sidebar {
+  border-left: none;
+  margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+/* Header and navbar */
+
+>>>>>>> fred/master
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
     url("resources/headerimage.jpg");
   background-size: cover;
   position: relative;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100vw;
 }
 .salt-mainheader h1 {
-  text-align: center;
   margin: 0px;
   padding: 7px;
 }
 .salt-mainheader h1 img {
-  height: 120px;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  width: 100%;
+  margin: 18px auto 10px 30px;
 }
-.salt-mainheader nav {
+
+.navicon {
+  width: 50%;
+  margin: auto 40px auto auto;
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 34px;
+  right: 30px;
+  color: rgb(245, 248, 223);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu-close-btn {
+  color: rgb(245, 248, 223);
+  margin: 30px 30px 0 0;
+  float: right;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.salt-mainmenu {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.salt-mainmenu .menu-btn ~ .menu {
   background-color: rgb(12, 8, 36);
+  right: calc(-50% - 18px);
+  transition: right 0.5s linear;
+  position: absolute;
+  height: fit-content;
+  min-height: 100vh;
+  box-shadow: -11px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  width: 50%;
+  display: block;
   color: rgb(249, 249, 228);
   font-weight: 700;
   font-size: 18px;
   z-index: 2;
-  position: relative;
 }
-.salt-altcolors .salt-mainheader nav {
-  background-color: rgb(231, 61, 30);
+
+.salt-mainmenu .menu-btn:checked ~ .menu {
+  right: 0;
 }
-.salt-mainheader nav ul {
+
+.salt-mainmenu ul {
   list-style-type: none;
   padding: 0px;
-  margin: 0px 70px;
-  display: flex;
-  justify-content: space-between;
+  margin: 70px 25px 10px 25px;
 }
-.salt-mainheader nav li {
+.salt-mainmenu li {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  padding: 6px 30px;
+  padding: 10px 0px;
   text-transform: uppercase;
 }
-.salt-mainheader nav a {
+.salt-mainmenu li:hover,
+.salt-mainmenu .sub-menu li:hover {
+  color: yellow;
+}
+
+.salt-mainmenu .sub-menu li {
+  color: rgb(249, 249, 228);
+}
+
+.salt-mainmenu a {
   color: inherit;
   text-decoration: none;
   white-space: nowrap;
+}
+
+
+
+.salt-navsearch {
+  display: block;
+  margin: 0 25px 20px;
+}
+
+.salt-mainsearch {
+  display: none;
+}
+
+.searchbar input {
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #959595;
+  font-size: 0.8rem;
+}
+
+.salt-mainmenu nav .sub-menu {
+  z-index: 99;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-left: solid 3px rgb(249, 249, 228);
+  padding-left: 10px;
+  margin-left: 15px;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+
+  .salt-mainheader {
+    display: block;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-close-btn {
+    display: none;
+  }
+
+  .salt-navsearch {
+    display: none;
+  }
+
+  .salt-mainsearch {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+
+
+  .salt-mainsearch {
+    display: block;
+  }
+
+  .salt-mainmenu {
+    position: relative;
+  }
+  .salt-altcolors .salt-mainmenu .menu {
+    background-color: rgb(231, 61, 30);
+  }
+  .salt-mainmenu nav ul {
+    margin: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .salt-mainmenu .menu-btn ~ .menu {
+    right: 0;
+    position: relative;
+    height: fit-content;
+    min-height: 0;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+  }
+
+  .salt-mainmenu li:hover .sub-menu {
+    max-height: 100vw;
+  }
+  .salt-mainmenu .sub-menu {
+    max-height: 0px;
+    transition: max-height 0.4s;
+    position: absolute;
+    z-index: 99;
+    background-color: #0c0824;
+    display: block;
+    margin-left: -23px;
+    overflow: hidden;
+    margin-top: 6px;
+    border: none;
+  }
+  .salt-mainmenu .sub-menu li {
+    display: block;
+    padding: 11px 23px;
+  }
+
+  .salt-sidebar {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .salt-mainsearch {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+  }
+  .salt-mainsearch input {
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #959595;
+  }
+
+  .salt-mainheader h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 7px;
+  }
+  .salt-mainheader h1 img {
+    width: 30%;
+    min-width: 330px;
+    margin: 0;
+    height: auto;
+  }
+  .salt-mainmenu nav {
+    display: inline-block;
+    position: relative;
+  }
 }
 
 /* End header and navbar */
