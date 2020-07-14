@@ -882,19 +882,27 @@ div .wpforms-field-medium {
   max-height: 350px;
 }
 .salt-colorblock {
-  position: absolute;
   width: 100%;
-  bottom: 0px;
+  color: rgba(12, 8, 36, 0.5);
+}
+
+.salt-pageheader img + .salt-colorblock {
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(12, 8, 36, 0.5);
+}
 
+.salt-pageheader img + .salt-colorblock h1 {
+  color: rgb(249, 249, 228);
+  margin: 0 auto;
 }
 .salt-defaultarticle .salt-articleheader h1,
 .salt-defaultpage .salt-pageheader h1 {
-  color: rgb(249, 249, 228);
+  color:rgba(12, 8, 36);
   width:80%;
-  margin: 0px auto;
+  margin: 25px auto;
   padding: 10px 0;
   box-sizing: border-box;
   font-weight: 700;

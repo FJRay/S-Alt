@@ -1,12 +1,6 @@
 <article class="salt-defaultpage">
     <div class="salt-pageheader">    
-        <?php
-            if (has_post_thumbnail()) {
-                echo get_the_post_thumbnail();
-            } else {
-                echo "<img src='".get_bloginfo('template_directory')."/resources/headerimage.jpg'> ";
-            }
-        ?>
+        <?php the_post_thumbnail(); ?>
         <div class='salt-colorblock'>
         <h1>
             <?php the_title() ?>
