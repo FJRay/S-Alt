@@ -1118,6 +1118,8 @@ display: none;
   border-bottom: 1px solid rgb(249, 249, 228);
   text-align: left;
 }
+
+
 .salt-upcomingevents ul {
   padding: 0px;
   margin: 0px;
@@ -1125,13 +1127,19 @@ display: none;
 }
 .salt-event {
   list-style-type: none;
-  height: 120px;
+  height: fit-content;
   overflow: hidden;
   margin: 20px 0px;
+  border-bottom: solid 2px;
+  padding-bottom: 30px;
 }
 .salt-event a {
   text-decoration: none;
   color: inherit;
+}
+.salt-event > * {
+  display: block;
+  width: 100%;
 }
 .salt-event h3 {
   margin: 0px;
@@ -1145,14 +1153,14 @@ display: none;
   font-weight: 1;
 }
 .salt-event img {
-  height: 100%;
-  width: 360px;
-  float: right;
+  height: 120px;
+  width: 100%;
   object-fit: cover;
 }
 .salt-eventdate {
   color: rgb(231, 61, 30);
   padding-bottom: 7px;
+  padding-top: 130px;
 }
 .salt-moreevents {
   text-decoration: none;
@@ -1160,6 +1168,14 @@ display: none;
   color: rgb(231, 61, 30);
   font-weight: 700;
   font-size: 24px;
+}
+@media (min-width: 768px) {
+  .salt-event img {
+    height: 100%;
+    width: 360px;
+    float: right;
+    object-fit: cover;
+  } 
 }
 .salt-international {
   background: rgb(246, 219, 196);
