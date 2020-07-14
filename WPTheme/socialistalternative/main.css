@@ -167,12 +167,11 @@ figcaption {
   margin: 0;
 }
 
-/* Header and navbar */
-
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
     url("resources/headerimage.jpg");
   background-size: cover;
+  background-position-y: top;
   position: relative;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -1008,7 +1007,7 @@ div .wpforms-field-medium {
     ),
     url("resources/headerimage.jpg");
   background-size: cover;
-  background-position-y: center;
+  background-position-y: bottom;
   color: rgb(249, 249, 228);
 }
 .salt-infoblock h2 {
@@ -1017,6 +1016,7 @@ div .wpforms-field-medium {
   color: rgb(249, 249, 228);
   font-size: 1.2em;
   letter-spacing: 1px;
+  text-align: right;
 }
 .salt-infoblock p {
   margin: 0px;
@@ -1088,7 +1088,7 @@ div .wpforms-field-medium {
     rgba(249, 249, 228, 0.5),
     rgba(249, 249, 228, 1)
   ),
-    url("resources/headerimage.jpg");
+    url("resources/ISA-founding.jpg");
   background-size: cover;
   background-position-y: center;
   color: rgb(12, 8, 36);
@@ -1171,6 +1171,7 @@ div .wpforms-field-medium {
 
   .salt-infoblock h2 {
     font-size: 2em;
+    
   }
   .salt-infoblock p {
     font-size: 1.2rem;
