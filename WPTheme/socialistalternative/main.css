@@ -971,7 +971,6 @@ div .wpforms-field-medium {
 .salt-defaultarticle,
 .salt-defaultpage {
   background-color: rgb(245, 248, 223);
-  padding-right: 10px;
 }
 .salt-defaultarticle .salt-articleheader,
 .salt-defaultpage .salt-pageheader {
@@ -987,20 +986,22 @@ div .wpforms-field-medium {
   padding: 0px;
   display: block;
   object-fit: cover;
+  max-height: 350px;
 }
 .salt-defaultarticle .salt-articleheader h1,
 .salt-defaultpage .salt-pageheader h1 {
   position: absolute;
+  width: 80%;
   bottom: 0px;
-  left: 0px;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: rgba(12, 8, 36, 0.5);
   color: rgb(249, 249, 228);
-  margin: 0px;
-  padding: 10px 40px;
+  margin: 0px auto;
+  padding: 10px 0;
   box-sizing: border-box;
   font-weight: 700;
-  font-size: 30;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 .salt-articledetails {
