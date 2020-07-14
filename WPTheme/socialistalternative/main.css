@@ -1026,15 +1026,24 @@ div .wpforms-field-medium {
 }
 .salt-homeblock {
   padding: 20px;
-  text-align: center;
-}
-.salt-homeblock h2 {
-  margin: 0px;
-}
-.salt-upcomingevents {
+  text-align: left;
   background-color: rgb(12, 8, 36);
   color: rgb(249, 249, 228);
 }
+.salt-homeblock h2 {
+  margin: 0px;
+  border-bottom: solid 2px;
+  text-align: left;
+}
+.salt-homeblock p {
+  padding-bottom:6px;
+}
+.salt-homeblock figure {
+  width: 30% !important;
+  margin: auto !important;;
+}
+
+
 .salt-upcomingevents h2 {
   border-bottom: 2px solid rgb(249, 249, 228);
   text-align: left;
