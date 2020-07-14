@@ -101,12 +101,12 @@ figcaption {
   border: none;
 }
 @media (min-width: 450px) {
-.wp-block-quote {
-  float: right;
-  margin-right: 0;
-  text-align: right;
-  max-width: 50%;
-}
+  .wp-block-quote {
+    float: right;
+    margin-right: 0;
+    text-align: right;
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -114,7 +114,7 @@ figcaption {
   h2 {
     font-size: 1.5rem;
   }
-  
+
   h3 {
     font-size: 1.3rem;
   }
@@ -130,7 +130,6 @@ figcaption {
     font-size: 1rem;
     font-weight: 500;
   }
-
 }
 
 /* Header and navbar */
@@ -856,14 +855,14 @@ div .wpforms-field-medium {
   }
 }
 @media (min-width: 1200px) {
-.salt-articlepreview p {
-  display: block;
-  text-align: left;
-  width: 90%;
-  margin: auto;
-  padding-top: 11px;
-  font-size: 0.8rem;
-}
+  .salt-articlepreview p {
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding-top: 11px;
+    font-size: 0.8rem;
+  }
 }
 
 /* End sidebar */
@@ -895,8 +894,8 @@ div .wpforms-field-medium {
   padding: 0px;
 }
 
-.salt-nomargin  .salt-pageheader {
-display: none;
+.salt-nomargin .salt-pageheader {
+  display: none;
 }
 
 .salt-defaultarticle .salt-articleheader img,
@@ -915,8 +914,7 @@ display: none;
 }
 
 .salt-pageheader img + .salt-colorblock,
-.salt-articleheader img + .salt-colorblock
-{
+.salt-articleheader img + .salt-colorblock {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -931,8 +929,8 @@ display: none;
 }
 .salt-defaultarticle .salt-articleheader h1,
 .salt-defaultpage .salt-pageheader h1 {
-  color:rgba(12, 8, 36);
-  width:80%;
+  color: rgba(12, 8, 36);
+  width: 80%;
   margin: 25px auto;
   padding: 10px 0;
   box-sizing: border-box;
@@ -1001,8 +999,6 @@ display: none;
 /* End post and default page */
 
 /* Homepage */
-
-
 
 .salt-infoblock {
   background: linear-gradient(
@@ -1119,7 +1115,6 @@ display: none;
   text-align: left;
 }
 
-
 .salt-upcomingevents ul {
   padding: 0px;
   margin: 0px;
@@ -1171,11 +1166,14 @@ display: none;
 }
 @media (min-width: 768px) {
   .salt-event img {
-    height: 100%;
-    width: 360px;
+    height: 200px;
+    width: 50%;
     float: right;
     object-fit: cover;
-  } 
+  }
+  .salt-eventdate {
+    padding-top: 0;
+  }
 }
 .salt-international {
   background: rgb(246, 219, 196);
