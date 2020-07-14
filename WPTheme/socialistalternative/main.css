@@ -875,12 +875,24 @@ div .wpforms-field-medium {
   max-width: 800px;
   color: rgb(12, 8, 36);
 }
+
+.salt-nomargin .salt-pagemain {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
 .salt-defaultarticle .salt-articleheader,
 .salt-defaultpage .salt-pageheader {
   position: relative;
   margin: 0px;
   padding: 0px;
 }
+
+.salt-nomargin  .salt-pageheader {
+display: none;
+}
+
 .salt-defaultarticle .salt-articleheader img,
 .salt-defaultpage .salt-pageheader img {
   width: 100%;
@@ -1225,13 +1237,4 @@ div .wpforms-field-medium {
 }
 .salt-fullwidth .salt-sidebar {
   display: none;
-}
-@media only screen and (max-width: 600px) {
-  .salt-maincontent {
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
-  .salt-sidebar {
-    display: none;
-  }
 }
