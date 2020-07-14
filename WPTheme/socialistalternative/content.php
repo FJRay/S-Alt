@@ -7,9 +7,11 @@
                 echo "<img src='".get_bloginfo('template_directory')."/resources/headerimage.jpg'> ";
             }
         ?>
+        <div class='salt-colorblock'>
         <h1>
             <?php the_title() ?>
         </h1>
+        </div>
     </div>
     <div class="salt-articlemain">
         <div class="salt-articleinfo">

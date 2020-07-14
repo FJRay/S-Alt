@@ -988,15 +988,19 @@ div .wpforms-field-medium {
   object-fit: cover;
   max-height: 350px;
 }
-.salt-defaultarticle .salt-articleheader h1,
-.salt-defaultpage .salt-pageheader h1 {
+.salt-colorblock {
   position: absolute;
-  width: 80%;
+  width: 100%;
   bottom: 0px;
   left: 0;
   right: 0;
   background-color: rgba(12, 8, 36, 0.5);
+
+}
+.salt-defaultarticle .salt-articleheader h1,
+.salt-defaultpage .salt-pageheader h1 {
   color: rgb(249, 249, 228);
+  width:80%;
   margin: 0px auto;
   padding: 10px 0;
   box-sizing: border-box;
