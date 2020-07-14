@@ -93,15 +93,12 @@ figcaption {
   font-size: 1rem;
 }
 
-
-
 .salt-nomargin,
 .salt-fullwidth .salt-maincontent {
   margin: 0;
   max-width: 100%;
   border: none;
 }
-
 
 /* Header and navbar */
 .salt-mainheader nav li:hover .sub-menu {
@@ -241,8 +238,6 @@ figcaption {
   white-space: nowrap;
 }
 
-
-
 .salt-navsearch {
   display: block;
   margin: 0 25px 20px;
@@ -273,7 +268,6 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-
   .salt-mainheader {
     display: block;
   }
@@ -294,7 +288,6 @@ figcaption {
     top: 19px;
     right: 19px;
   }
-
 
   .salt-mainsearch {
     display: block;
@@ -415,8 +408,8 @@ figcaption {
   padding-bottom: 7px;
 }
 .salt-contactblock svg {
-vertical-align: middle;
-font-size: 1.3rem;
+  vertical-align: middle;
+  font-size: 1.3rem;
 }
 
 .salt-contactblock a span {
@@ -467,7 +460,6 @@ font-size: 1.3rem;
 
 @media (min-width: 450px) {
   .salt-mainfooter {
-
     grid-template-columns: 2fr 1fr;
   }
   .salt-contactblock {
@@ -480,7 +472,6 @@ font-size: 1.3rem;
     padding-top: 20px;
   }
 }
-
 
 @media (min-width: 768px) {
   .salt-mainfooter {
@@ -515,9 +506,9 @@ font-size: 1.3rem;
     padding: 0;
   }
   .salt-sociallinks svg {
-  width: 35px !important;
-  height: 35px;
-  padding: 6px;
+    width: 35px !important;
+    height: 35px;
+    padding: 6px;
   }
 }
 
@@ -525,7 +516,7 @@ font-size: 1.3rem;
   .salt-sociallinks svg {
     width: 45px !important;
     height: 45px;
-    }
+  }
 }
 
 /*  End footer */
@@ -807,7 +798,6 @@ div .wpforms-field-medium {
   }
 }
 
-
 .salt-infoblock {
   background: linear-gradient(
       190deg,
@@ -918,69 +908,79 @@ div .wpforms-field-medium {
 /* Sidebar */
 
 .salt-sidebar {
-  background-color: rgb(245, 248, 223);
+  display: none;
 }
-.salt-articlepreview {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  margin: 20px;
-  text-align: right;
-  border-top: solid 3px rgb(12, 8, 36);
-  padding-top: 10px;
-}
-.salt-articlebody {
-  padding-bottom: 10px;
-}
-.salt-articlepreview h3 {
-  padding: 0px;
-  margin: 0px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  font-size: 24px;
-  color: rgb(231, 61, 30);
-  text-transform: uppercase;
-}
-.salt-articlepreview:first-child {
-  border-top: none;
-  padding-top: 0px;
-}
-.salt-articlepreview p {
-  text-align: justify;
-  width: 90%;
-  margin: auto;
-  padding-top: 11px;
-  line-height: 21px;
-}
-.salt-articlepreview img {
-  width: 100%;
-  height: auto;
-}
-.salt-readmore {
-  display: inline-block;
-  color: rgb(245, 248, 223);
-  background-color: rgb(12, 8, 36);
-  padding: 6px 18px;
-  font-weight: 1;
-}
-.salt-readmore::after {
-  content: ">>";
+
+@media (min-width: 768px) {
+  .salt-sidebar {
+    display: block;
+    background-color: rgb(245, 248, 223);
+  }
+  .salt-articlepreview {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+    text-align: right;
+    border-top: solid 3px rgb(12, 8, 36);
+    padding-top: 10px;
+  }
+  .salt-articlebody {
+    padding-bottom: 10px;
+  }
+  .salt-articlepreview h3 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: rgb(231, 61, 30);
+    text-transform: uppercase;
+  }
+  .salt-articlepreview:first-child {
+    border-top: none;
+    padding-top: 0px;
+  }
+  .salt-articlepreview p {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    padding-top: 11px;
+    line-height: 21px;
+  }
+  .salt-articlepreview img {
+    width: 100%;
+    height: auto;
+  }
+  .salt-readmore {
+    display: inline-block;
+    color: rgb(245, 248, 223);
+    background-color: rgb(12, 8, 36);
+    padding: 6px 18px;
+    font-weight: 1;
+  }
+  .salt-readmore::after {
+    content: ">>";
+  }
 }
 
 /* End sidebar */
 
 /* Post */
 
-.salt-defaultarticle, .salt-defaultpage {
+.salt-defaultarticle,
+.salt-defaultpage {
   background-color: rgb(245, 248, 223);
   padding-right: 10px;
 }
-.salt-defaultarticle .salt-articleheader, .salt-defaultpage  .salt-pageheader {
+.salt-defaultarticle .salt-articleheader,
+.salt-defaultpage .salt-pageheader {
   position: relative;
   margin: 0px;
   padding: 0px;
 }
-.salt-defaultarticle .salt-articleheader img, .salt-defaultpage  .salt-pageheader img {
+.salt-defaultarticle .salt-articleheader img,
+.salt-defaultpage .salt-pageheader img {
   width: 100%;
   height: auto;
   margin: 0px;
@@ -988,7 +988,8 @@ div .wpforms-field-medium {
   display: block;
   object-fit: cover;
 }
-.salt-defaultarticle .salt-articleheader h1, .salt-defaultpage  .salt-pageheader h1 {
+.salt-defaultarticle .salt-articleheader h1,
+.salt-defaultpage .salt-pageheader h1 {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -1021,7 +1022,8 @@ div .wpforms-field-medium {
   border-bottom: 1px solid rgb(12, 8, 36);
   font-weight: 1;
 }
-.salt-defaultarticle .salt-articlemain, .salt-pagemain {
+.salt-defaultarticle .salt-articlemain,
+.salt-pagemain {
   width: 80%;
   margin: auto;
   max-width: 800px;
