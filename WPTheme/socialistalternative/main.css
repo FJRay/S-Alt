@@ -1025,14 +1025,18 @@ div .wpforms-field-medium {
   font-size: 1rem;
 }
 .salt-homeblock {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
   padding: 20px;
   text-align: center;
 }
 .salt-homeblock h2 {
   margin: 0px;
-  border-bottom: 1px solid rgb(249, 249, 228);
+}
+.salt-upcomingevents {
+  background-color: rgb(12, 8, 36);
+  color: rgb(249, 249, 228);
+}
+.salt-upcomingevents h2 {
+  border-bottom: 2px solid rgb(249, 249, 228);
   text-align: left;
 }
 .salt-upcomingevents ul {
@@ -1079,15 +1083,25 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 .salt-international {
-  background: rgb(246, 219, 196);
   background: linear-gradient(
-    144deg,
-    rgba(246, 219, 196, 1) 0%,
-    rgba(12, 8, 36, 1) 100%
-  );
+    207deg,
+    rgba(249, 249, 228, 0.5),
+    rgba(249, 249, 228, 1)
+  ),
+    url("resources/headerimage.jpg");
+  background-size: cover;
+  background-position-y: center;
+  color: rgb(12, 8, 36);
+
 }
 .salt-international h2 {
-  text-align: right;
+  text-align: left;
+  border-bottom:rgb(12, 8, 36) 2px solid;
+}
+.salt-international a {
+  color: rgb(12, 8, 36);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .salt-international .size-medium {
@@ -1103,17 +1117,6 @@ div .wpforms-field-medium {
   list-style-type: none;
 }
 
-.salt-homeblock {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
-  padding: 20px;
-  text-align: center;
-}
-.salt-homeblock h2 {
-  margin: 0px;
-  border-bottom: 1px solid rgb(249, 249, 228);
-  text-align: left;
-}
 
 .salt-upcomingevents ul {
   padding: 0px;
@@ -1165,6 +1168,14 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 @media (min-width: 768px) {
+
+  .salt-infoblock h2 {
+    font-size: 2em;
+  }
+  .salt-infoblock p {
+    font-size: 1.2rem;
+    padding-top: 100px;
+  }
   .salt-event img {
     height: 200px;
     width: 50%;
@@ -1175,17 +1186,7 @@ div .wpforms-field-medium {
     padding-top: 0;
   }
 }
-.salt-international {
-  background: rgb(246, 219, 196);
-  background: linear-gradient(
-    144deg,
-    rgba(246, 219, 196, 1) 0%,
-    rgba(12, 8, 36, 1) 100%
-  );
-}
-.salt-international h2 {
-  text-align: right;
-}
+
 
 .salt-international .wp-block-image {
   padding-bottom: 40px;
