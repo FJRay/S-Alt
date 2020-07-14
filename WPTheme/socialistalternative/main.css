@@ -10,21 +10,21 @@ html {
 h1,
 h2 {
   font-family: "Candal", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 h3 {
   font-family: "Candal", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 h4 {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 h5 {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 h6 {
@@ -98,6 +98,29 @@ figcaption {
   margin: 0;
   max-width: 100%;
   border: none;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 /* Header and navbar */
@@ -966,11 +989,18 @@ div .wpforms-field-medium {
 
 /* End sidebar */
 
-/* Post */
+/* Posts and default pages */
 
 .salt-defaultarticle,
 .salt-defaultpage {
   background-color: rgb(245, 248, 223);
+}
+.salt-defaultarticle .salt-articlemain,
+.salt-pagemain {
+  width: 80%;
+  margin: auto;
+  max-width: 800px;
+  color: rgb(12, 8, 36);
 }
 .salt-defaultarticle .salt-articleheader,
 .salt-defaultpage .salt-pageheader {
@@ -1027,14 +1057,6 @@ div .wpforms-field-medium {
   border-bottom: 1px solid rgb(12, 8, 36);
   font-weight: 1;
 }
-.salt-defaultarticle .salt-articlemain,
-.salt-pagemain {
-  width: 80%;
-  margin: auto;
-  max-width: 800px;
-  color: rgb(12, 8, 36);
-}
-
 .salt-articlemain p {
   margin: 16px 0;
 }
@@ -1061,10 +1083,13 @@ div .wpforms-field-medium {
   padding-left: 10px;
   border-left: 1px solid rgb(249, 249, 228);
 }
-
 .salt-articlebody img {
   width: 100%;
 }
+
+/* End post and default page */
+
+/* Homepage */
 
 .salt-homeblock {
   background-color: rgb(12, 8, 36);
@@ -1144,7 +1169,7 @@ div .wpforms-field-medium {
   min-height: calc(100vh - 300px);
   list-style-type: none;
 }
-/* End post */
+/* End homepage */
 
 /* News page */
 
