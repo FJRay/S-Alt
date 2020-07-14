@@ -807,7 +807,7 @@ div .wpforms-field-medium {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .salt-sidebar {
     display: block;
     background-color: rgb(245, 248, 223);
