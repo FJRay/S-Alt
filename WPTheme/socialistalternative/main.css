@@ -481,6 +481,7 @@ font-size: 1.3rem;
   }
   .salt-sociallinks {
     padding-top: 20px;
+  }
 }
 
 
@@ -973,25 +974,24 @@ div .wpforms-field-medium {
 
 /* Post */
 
-.salt-defaultarticle {
+.salt-defaultarticle, .salt-defaultpage {
   background-color: rgb(245, 248, 223);
   padding-right: 10px;
 }
-.salt-defaultarticle .salt-articleheader {
+.salt-defaultarticle .salt-articleheader, .salt-defaultpage  .salt-pageheader {
   position: relative;
   margin: 0px;
   padding: 0px;
 }
-.salt-defaultarticle .salt-articleheader img {
+.salt-defaultarticle .salt-articleheader img, .salt-defaultpage  .salt-pageheader img {
   width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
   display: block;
   object-fit: cover;
-  max-height: calc(100vh - 300px);
 }
-.salt-defaultarticle .salt-articleheader h1 {
+.salt-defaultarticle .salt-articleheader h1, .salt-defaultpage  .salt-pageheader h1 {
   position: absolute;
   bottom: 0px;
   left: 0px;
