@@ -804,54 +804,54 @@ div .wpforms-field-medium {
 
 .salt-sidebar {
   display: none;
+  background-color: rgb(245, 248, 223);
+}
+.salt-articlepreview {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin: 20px;
+  text-align: right;
+  border-top: solid 3px rgb(12, 8, 36);
+  padding-top: 10px;
+}
+.salt-articlebody {
+  padding-bottom: 10px;
+}
+.salt-articlepreview h3 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: rgb(231, 61, 30);
+  text-transform: uppercase;
+}
+.salt-articlepreview:first-child {
+  border-top: none;
+  padding-top: 0px;
+}
+.salt-articlepreview p {
+  display: none;
+}
+.salt-articlepreview img {
+  width: 100%;
+  height: auto;
+}
+.salt-readmore {
+  display: inline-block;
+  color: rgb(245, 248, 223);
+  background-color: rgb(12, 8, 36);
+  padding: 6px 18px;
+  font-weight: 1;
+}
+.salt-readmore::after {
+  content: ">>";
 }
 
 @media (min-width: 992px) {
   .salt-sidebar {
     display: block;
-    background-color: rgb(245, 248, 223);
-  }
-  .salt-articlepreview {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    margin: 20px;
-    text-align: right;
-    border-top: solid 3px rgb(12, 8, 36);
-    padding-top: 10px;
-  }
-  .salt-articlebody {
-    padding-bottom: 10px;
-  }
-  .salt-articlepreview h3 {
-    padding: 0px;
-    margin: 0px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    font-size: 24px;
-    color: rgb(231, 61, 30);
-    text-transform: uppercase;
-  }
-  .salt-articlepreview:first-child {
-    border-top: none;
-    padding-top: 0px;
-  }
-  .salt-articlepreview p {
-    display: none;
-  }
-  .salt-articlepreview img {
-    width: 100%;
-    height: auto;
-  }
-  .salt-readmore {
-    display: inline-block;
-    color: rgb(245, 248, 223);
-    background-color: rgb(12, 8, 36);
-    padding: 6px 18px;
-    font-weight: 1;
-  }
-  .salt-readmore::after {
-    content: ">>";
   }
 }
 @media (min-width: 1200px) {
@@ -1014,8 +1014,9 @@ div .wpforms-field-medium {
   border-bottom: solid 5px rgb(249, 249, 228);
 }
 
-.salt-homepage .salt-sidebar {
+.salt-homepage + .salt-sidebar {
   display: block;
+  grid-area: 2 / 1 / 2 / 1;
 }
 
 .salt-infoblock {
@@ -1115,32 +1116,6 @@ div .wpforms-field-medium {
   color: rgb(231, 61, 30);
   font-weight: 700;
   font-size: 24px;
-}
-.salt-international {
-  background: linear-gradient(
-    207deg,
-    rgba(249, 249, 228, 0.5),
-    rgba(249, 249, 228, 1)
-  ),
-    url("resources/ISA-founding.jpg");
-  background-size: cover;
-  background-position-y: center;
-  color: rgb(12, 8, 36);
-
-}
-.salt-international h2 {
-  text-align: left;
-  border-bottom:rgb(12, 8, 36) 2px solid;
-}
-.salt-international a {
-  color: rgb(12, 8, 36);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.salt-international .size-medium {
-  width: auto;
-  float: none;
 }
 .salt-newsblock {
   background-color: rgb(12, 8, 36);
