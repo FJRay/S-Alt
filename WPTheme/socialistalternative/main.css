@@ -94,7 +94,8 @@ figcaption {
   font-size: 1rem;
 }
 
-.salt-nomargin, .salt-homepage,
+.salt-nomargin,
+.salt-homepage,
 .salt-fullwidth .salt-maincontent {
   margin: 0;
   max-width: 100%;
@@ -1013,22 +1014,75 @@ div .wpforms-field-medium {
   max-width: 100%;
   border-bottom: solid 5px rgb(249, 249, 228);
 }
-
 .salt-homepage + .salt-sidebar {
-  display: flex;
+  display: block;
   grid-area: 2 / 1 / 2 / 1;
+}
+
+.salt-homepage + .salt-sidebar .sidebar-content {
+  display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 0;
+  height: 300px;
 }
 
-.salt-homepage + .salt-sidebar > a {
+.salt-homepage + .salt-sidebar .sidebar-content > a {
   width: 100%;
   flex-shrink: 0;
   height: fit-content;
-  padding: 5%;
+  padding: 5% 5% 0;
   border: none;
   margin: 0;
+}
+.salt-articlepreview {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: rgba(12, 8, 36);
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.svg-inline--fa.fa-w-10 {
+  font-size: 5rem;
+}
+.prev:hover,
+.next:hover {
+  color: rgba(231, 61, 30, 1);
+}
+
+.sidebar-buttons {
+  width: fit-content;
+  margin: auto;
+}
+.active,
+.dot:hover {
+  background-color: rgba(231, 61, 30, 1);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.salt-homepage + .salt-sidebar h2 {
+  width: 90%;
+  margin: 10px auto;
+  border-bottom: solid 2px;
 }
 .salt-homepage + .salt-sidebar .salt-articlepreview > * {
   display: block;
@@ -1078,13 +1132,12 @@ div .wpforms-field-medium {
   text-align: left;
 }
 .salt-homeblock p {
-  padding-bottom:6px;
+  padding-bottom: 6px;
 }
 .salt-homeblock figure {
   width: 30% !important;
   margin: auto !important;
 }
-
 
 .salt-upcomingevents h2 {
   border-bottom: 2px solid rgb(249, 249, 228);
@@ -1093,7 +1146,6 @@ div .wpforms-field-medium {
 .salt-upcomingevents ul {
   padding: 0px;
   margin: 0px;
- 
 }
 .salt-upcomingevents ul p {
   text-align: left;
@@ -1148,7 +1200,6 @@ div .wpforms-field-medium {
   list-style-type: none;
 }
 
-
 .salt-upcomingevents ul {
   padding: 0px;
   margin: 0px;
@@ -1199,7 +1250,6 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 @media (min-width: 768px) {
-
   .salt-homepage {
     font-size: 0px;
     min-height: calc(100vh - 300px);
@@ -1211,7 +1261,6 @@ div .wpforms-field-medium {
 
   .salt-infoblock h2 {
     font-size: 2rem;
-    
   }
   .salt-infoblock p {
     font-size: 1.2rem;
@@ -1227,7 +1276,6 @@ div .wpforms-field-medium {
     padding-top: 0;
   }
 }
-
 
 .salt-international .wp-block-image {
   padding-bottom: 40px;
