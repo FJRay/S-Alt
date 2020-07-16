@@ -15,8 +15,12 @@
     ?>
     </div>
     <div class='sidebar-buttons'>
-        <i class="fas fa-chevron-left prev" onclick="plusSlides(-1)"></i>
-        <i class="fas fa-chevron-right next" onclick="plusSlides(1) "></i>
+        <button class="salt-articlepreview-prev salt-button-link">
+            <i class="fas fa-chevron-left prev"></i>
+        </button>
+        <button class="salt-articlepreview-next salt-button-link">
+            <i class="fas fa-chevron-right next"></i>
+    </button>
 
     </div>
 

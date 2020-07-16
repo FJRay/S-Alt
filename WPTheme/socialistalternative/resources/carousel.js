@@ -1,28 +1,43 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+function initializeCarousel(slidesSelector, prevButtonSelector, nextButtonSelector) {
+  const slides = document.getElementsByClassName(slidesSelector);
+  const prevButton = document.getElementsByClassName(prevButtonSelector)[0];
+  const nextButton = document.getElementsByClassName(nextButtonSelector)[0];
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+  let slideIndex = 0;
 
-
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("salt-articlepreview");
-  if (n > slides.length) {
-    slideIndex = 1; //makes you go back to the start when you click next on the last slide?
-  }
-  if (n < 1) {
-    slideIndex = slides.length;//makes you go to last slide when you click previous on first?
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % slides.length
   }
 
+  function prevSlide() {
+    slideIndex = slideIndex - 1;
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+  }
 
-  slides[slideIndex - 1].classList.add("active");
+  function updateSlideDisplay() {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("displaying");
+    }
   
+    slides[slideIndex].classList.add("displaying");
+  }
 
+  prevButton.addEventListener('click', () => {
+    prevSlide();
+    updateSlideDisplay();
+  });
+
+  nextButton.addEventListener('click', () => {
+    nextSlide();
+    updateSlideDisplay();
+  })
+
+  updateSlideDisplay();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  initializeCarousel('salt-articlepreview', 'salt-articlepreview-prev', 'salt-articlepreview-next');
+  initializeCarousel('salt-event', 'salt-articlepreview-prev', 'salt-articlepreview-next');
+})
