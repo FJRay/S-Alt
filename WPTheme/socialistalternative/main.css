@@ -428,9 +428,8 @@ figcaption {
   object-fit: contain;
 }
 .salt-contactblock {
-  padding-left: 15px;
   margin: auto;
-  width: 240px;
+  width: 200px;
   text-align: center;
 }
 .salt-contactblock a {
@@ -439,6 +438,8 @@ figcaption {
   color: inherit;
   font-weight: 700;
   padding-bottom: 7px;
+  width: fit-content;
+  float: right;
 }
 .salt-contactblock svg {
   vertical-align: middle;
@@ -462,6 +463,7 @@ figcaption {
 }
 .salt-socialblock {
   grid-column: 1 / span 2;
+  margin: 10px 0;
 }
 .salt-socialblock img {
   height: 60px;
@@ -479,9 +481,22 @@ figcaption {
   color: rgb(12, 8, 36);
   background-color: rgb(249, 249, 228);
   border-radius: 50%;
-  width: 50px !important;
-  height: 50px;
+  width: 30px !important;
+  height: 30px;
   padding: 6px;
+}
+.salt-international-info {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+  display: flex;
+}
+.salt-international-info img {
+  width: 20%;
+}
+.salt-international-info p {
+  font-size: 0.5rem;
+  text-align: right;
+  margin-right: 10px;
 }
 .salt-altcolors .salt-mainfooter {
   background-color: rgb(231, 61, 30);
@@ -494,21 +509,32 @@ figcaption {
 @media (min-width: 450px) {
   .salt-mainfooter {
     grid-template-columns: 2fr 1fr;
+
   }
   .salt-contactblock {
-    width: 300px;
+    width: 200px;
   }
-  .salt-contactblock a span {
-    font-size: 0.8rem;
+
+  .salt-sociallinks svg{
+    width: 50px !important;
+    height: 50px;
   }
-  .salt-sociallinks {
-    padding-top: 20px;
+  .salt-international-info {
+    margin-top: 20px;
   }
+  .salt-international-info p {
+    font-size: 0.6rem;
+    text-align: right;
+    margin-right: 23px;
+    flex-grow: 2;
 }
 
 @media (min-width: 768px) {
   .salt-mainfooter {
+    background-color: darkmagenta;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .salt-mainfooter > * {
     display: block;
@@ -516,12 +542,15 @@ figcaption {
     padding: 0px;
     box-sizing: border-box;
   }
+
+
   .salt-contactblock {
-    min-width: 269px;
+    width: 200px;
+    margin: auto 0;
   }
 
   .salt-footerhome img {
-    width: 100%;
+    width: 30%;
     box-sizing: border-box;
     padding: 0;
     max-height: 200px;
