@@ -1027,17 +1027,25 @@ div .wpforms-field-medium {
   height: 300px;
 }
 
-.salt-homepage + .salt-sidebar .sidebar-content > a {
+.salt-articlepreview {
   width: 100%;
   flex-shrink: 0;
   height: fit-content;
   padding: 5% 5% 0;
   border: none;
   margin: 0;
-}
-.salt-articlepreview {
   display: none;
+  right: 100vw;
+  transition: none;
+  position: absolute;
 }
+
+.salt-articlepreview.active {
+  display: block;
+  right: 0;
+  transition: right 0.5s linear;
+}
+
 
 .prev,
 .next {
@@ -1062,21 +1070,6 @@ div .wpforms-field-medium {
 .sidebar-buttons {
   width: fit-content;
   margin: auto;
-}
-.active,
-.dot:hover {
-  background-color: rgba(231, 61, 30, 1);
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
 .salt-homepage + .salt-sidebar h2 {
@@ -1259,6 +1252,29 @@ div .wpforms-field-medium {
     grid-auto-flow: column;
   }
 
+  .salt-homepage + .salt-sidebar {
+    display: block;
+    grid-area: 1 /2 / 1 /2;
+
+  }
+  
+  .salt-homepage + .salt-sidebar .sidebar-content {
+    display: block;
+    margin: 0;
+    height: fit-content;
+  }
+  .salt-articlepreview {
+    width: 90%;
+    flex-shrink: 0;
+    height: fit-content;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    position: relative;
+    right: 0;
+  }
+
   .salt-infoblock h2 {
     font-size: 2rem;
   }
@@ -1275,6 +1291,12 @@ div .wpforms-field-medium {
   .salt-eventdate {
     padding-top: 0;
   }
+
+
+.prev,
+.next {
+  display:none;
+}
 }
 
 .salt-international .wp-block-image {

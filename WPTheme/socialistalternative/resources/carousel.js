@@ -18,8 +18,11 @@ function showSlides(n) {
     slideIndex = slides.length;//makes you go to last slide when you click previous on first?
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
   }
 
-  slides[slideIndex - 1].style.display = "block";
+
+  slides[slideIndex - 1].classList.add("active");
+  
+
 }
