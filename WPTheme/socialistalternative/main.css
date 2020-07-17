@@ -413,12 +413,7 @@ figcaption {
 
 }
 
-.salt-mainfooter > * {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: auto;
-  margin-top: auto;
-}
+
 
 .salt-footerhome img {
   width: 100%;
@@ -427,7 +422,8 @@ figcaption {
 }
 .salt-contactblock {
   margin: auto;
-  width: 200px;
+  width: 210px;
+  padding-left: 10px;
   text-align: center;
 }
 .salt-contactblock a {
@@ -490,11 +486,12 @@ figcaption {
 }
 .salt-international-info img {
   width: 20%;
+  margin-left: 10px;
 }
 .salt-international-info p {
   font-size: 0.5rem;
   text-align: right;
-  margin-right: 10px;
+  margin: auto;
 }
 .salt-altcolors .salt-mainfooter {
   background-color: rgb(231, 61, 30);
@@ -502,12 +499,8 @@ figcaption {
 
 @media (min-width: 450px) {
   .salt-mainfooter {
-
     grid-template-columns: 2fr 1fr;
-
-  }
-  .salt-contactblock {
-    width: 200px;
+    padding: 30px;
   }
 
   .salt-sociallinks svg{
@@ -520,22 +513,22 @@ figcaption {
   .salt-international-info p {
     font-size: 0.6rem;
     text-align: right;
-    margin-right: 23px;
     flex-grow: 2;
+  }
+
+    .salt-international-info img {
+      margin-left: 23px;
+    }
 }
 
 @media (min-width: 768px) {
   .salt-mainfooter {
-    background-color: gray;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 30px 20px;
+    grid-template-rows: 1fr;
+    padding: 30px;
     }
-  .salt-mainfooter > * {
-    width: 100%;
-    padding: 0px;
-    box-sizing: border-box;
-  }
+
 
   .salt-footerhome {
     width: 100%;
@@ -555,12 +548,10 @@ figcaption {
     object-fit: contain;
   }
 
-  .salt-contactblock h2 {
-    padding: 0px;
-    font-size: 24px;
-    padding: 0px;
-    margin-top: 28px;
-    padding-bottom: 7px;
+  .salt-contactblock {
+  margin-bottom: 0;
+  margin-top: auto;
+  padding-bottom: 15px;
   }
   .salt-contactblock a span {
     font-size: 0.8rem;
@@ -569,42 +560,75 @@ figcaption {
   .salt-contactblock a svg {
     font-size: 1.5rem;
   }
+  
   .salt-socialblock {
+    margin-top: auto;
     grid-area: 2 / 2 / span 1 / span 1;
   }
   .salt-sociallinks {
     padding: 0;
-    margin: 0px 0px 0px 21px;
+    justify-content: center;
   }
   .salt-sociallinks svg {
     width: 40px !important;
     height: 40px;
     padding: 6px;
+    margin: 0 10px;
   }
   .salt-international-info {
     display: flex;
     margin: 0;
+    justify-content: flex-end;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  .salt-international-info img {
+    width: 15%;
   }
   .salt-international-info p {
     font-size: 0.8rem;
     height: fit-content;
+    width: fit-content;
     margin-top: auto;
+    flex-grow: 0;
   }
 }
 
-@media (min-width: 920px) {
-  .salt-mainfooter {
-    background-color: darkmagenta;
-  }
-
 @media (min-width: 1200px) {
-  .salt-mainfooter {
-    background-color: firebrick;
+
+  .salt-footerhome {
+    grid-area: 1 / 1 / span 3 / span 1;
+  }
+  .salt-contactblock {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+  }
+  .salt-contactblock a {
+    padding: 0;
+  }
+  .salt-socialblock {
+    margin: 15px 0;
   }
   .salt-sociallinks svg {
     width: 45px !important;
     height: 45px;
   }
+  .salt-international-info {
+    grid-area: 3 / 2 /span 1 / span 1;
+    margin-top: 5px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+}
+.salt-international-info p {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 75%;
+}
+
 }
 
 /*  End footer */
