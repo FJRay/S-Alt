@@ -526,26 +526,29 @@ figcaption {
 
 @media (min-width: 768px) {
   .salt-mainfooter {
-    background-color: darkmagenta;
+    background-color: gray;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+    justify-content:space-between;
+    }
   .salt-mainfooter > * {
-    display: block;
     width: 100%;
     padding: 0px;
     box-sizing: border-box;
   }
 
+  .salt-footerhome {
+    width: 50%;
+  }
+
 
   .salt-contactblock {
-    width: 200px;
+    width: 300px;
     margin: auto 0;
   }
 
   .salt-footerhome img {
-    width: 30%;
+    width: 100%;
     box-sizing: border-box;
     padding: 0;
     max-height: 200px;
@@ -559,17 +562,38 @@ figcaption {
     margin-top: 28px;
     padding-bottom: 7px;
   }
+  .salt-contactblock a span {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+  .salt-contactblock a svg {
+    font-size: 1.5rem;
+  }
   .salt-sociallinks {
     padding: 0;
   }
   .salt-sociallinks svg {
-    width: 35px !important;
-    height: 35px;
-    padding: 6px;
+    width: 50px !important;
+    height: 50px;
+    padding: 8px;
+  }
+  .salt-international-info {
+    display: flex;
+  }
+  .salt-international-info p {
+    font-size: 0.8rem;
   }
 }
 
+@media (min-width: 920px) {
+  .salt-mainfooter {
+    background-color: darkmagenta;
+  }
+
 @media (min-width: 1200px) {
+  .salt-mainfooter {
+    background-color: firebrick;
+  }
   .salt-sociallinks svg {
     width: 45px !important;
     height: 45px;
