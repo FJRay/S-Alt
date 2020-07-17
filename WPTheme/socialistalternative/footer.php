@@ -1,7 +1,7 @@
 </div>
         <footer class="salt-mainfooter">
             <a href="<?php echo get_bloginfo("wpurl"); ?>" class="salt-footerhome">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative">
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative Logo">
             </a>
             <div class="salt-contactblock">
                 <h2>CONTACT US</h2>
