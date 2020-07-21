@@ -642,10 +642,7 @@ div .wpforms-field-medium {
   margin-right: 23px;
   max-width: 94%;
 }
-.saltAboutParagraphs {
-  margin: auto;
-  max-width: 80%;
-}
+
 .saltPoliciesHeader {
   margin-left: 20px;
   margin-right: auto;
@@ -699,10 +696,7 @@ div .wpforms-field-medium {
   .saltAboutContainer .wp-block-image {
     margin-top: 0;
   }
-  .saltAboutParagraphs {
-    margin-right: 0px;
-    margin-left: 220px;
-  }
+
   .saltAboutParagraphs .wp-block-group__inner-container {
     display: inline;
   }
@@ -861,6 +855,10 @@ div .wpforms-field-medium {
   .salt-sidebar {
     display: block;
   }
+  .salt-sidebar h2 {
+    width: 90%;
+    margin: 30px auto 10px;
+  }
 
 }
 @media (min-width: 1200px) {
@@ -909,13 +907,13 @@ div .wpforms-field-medium {
 
 .salt-defaultarticle .salt-articleheader img,
 .salt-defaultpage .salt-pageheader img {
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-  display: block;
-  object-fit: cover;
-  max-height: 350px;
+width: 57%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    object-fit: cover;
+    max-height: 380px;
 }
 .salt-colorblock {
   width: 100%;
