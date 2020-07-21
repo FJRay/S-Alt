@@ -989,8 +989,7 @@ div .wpforms-field-medium {
   max-height: 350px;
 }
 .salt-colorblock {
-  width: 100%;
-  color: rgba(12, 8, 36, 0.5);
+  display: none;
 }
 
 .salt-pageheader img + .salt-colorblock,

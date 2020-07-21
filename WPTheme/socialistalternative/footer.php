@@ -4,7 +4,6 @@
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative Logo">
             </a>
             <div class="salt-contactblock">
-                <h2>CONTACT US</h2>
                 <a href="mailto:info@socialistalternative.net">
                     <i class="far fa-envelope"></i>
                     <span>info@socialistalternative.net</span>
