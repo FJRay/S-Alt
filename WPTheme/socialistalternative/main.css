@@ -587,6 +587,7 @@ figcaption {
 .podcastLogos img {
   display: block;
   margin: auto;
+  width: 60px;
 }
 
 .podcastLogos .is-resized > figcaption {
