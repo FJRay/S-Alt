@@ -3,7 +3,7 @@
         if (has_post_thumbnail()) {
             echo get_the_post_thumbnail();
         } else {
-            echo "<img src='".get_bloginfo('template_directory')."/resources/headerimage.jpg'> ";
+            echo "<img src='".get_bloginfo('template_directory')."/resources/megaphone.png'> ";
         }
     ?>
     <h3><?php the_title(); ?></h3>

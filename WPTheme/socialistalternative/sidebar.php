@@ -1,4 +1,6 @@
 <div class="salt-sidebar">
+    <h2>NEWS</h2>
+    <div class="sidebar-content">
     <?php 
         $sidebar_loop = new WP_Query(array(
             "category_name" => "Uncategorized",
@@ -11,4 +13,16 @@
             }
         }
     ?>
+    </div>
+    <div class='sidebar-buttons'>
+        <button class="salt-articlepreview-prev salt-button-link">
+            <i class="fas fa-chevron-left prev"></i>
+        </button>
+        <button class="salt-articlepreview-next salt-button-link">
+            <i class="fas fa-chevron-right next"></i>
+    </button>
+
+    </div>
+
+
 </div>
