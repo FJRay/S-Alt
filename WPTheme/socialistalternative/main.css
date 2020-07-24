@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.salt-paging {
+	text-align:center;
+	color: rgb(245, 248, 223);
+}
+
+.salt-paging a {
+	color: rgb(245, 248, 223);
+	text-decoration: none;
+}
+
 html {
   font-size: 20px;
   line-height: 1.3;

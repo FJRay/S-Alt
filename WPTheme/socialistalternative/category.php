@@ -1,6 +1,11 @@
 <?php 
+	$pageSize = 6;
     $search = get_query_var("search");
-    $queryString = "";
+    $tpage = intval(get_query_var("page"));
+    if ($tpage < 1) {
+		$tpage = 1;
+	}
+    $queryString = "posts_per_page=".$pageSize."&offset=".($tpage-1)*$pageSize;
     $failString = "No posts found";
     $category = get_the_category(); 
     if ($search && $search != "") {
@@ -21,7 +26,13 @@
     } else {
 		echo "<h1 class='salt-error'>".$failString."</h1>";
 	}
-    echo '</ul></main>';
+    echo '</ul>';
+    echo '<div class="salt-paging">';
+    if ($tpage && $tpage > 1) {
+		echo '<a href="?page='.($tpage-1).'" class="salt-prev">◄</a> ';
+	}
+    echo '<span>Page '.($tpage).' <a href="?page='.($tpage+1).'" class="salt-next">►</a>';
+    echo '</div></main>';
     get_sidebar();
     get_footer();
 ?>
