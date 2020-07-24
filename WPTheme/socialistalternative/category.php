@@ -10,10 +10,10 @@
     $category = get_the_category(); 
     if ($search && $search != "") {
 		$search = preg_replace("/[^\w ]/", "", $search);
-		$queryString = $queryString."s=".sanitize_title($search);
-		query_posts($queryString);
+		$queryString = $queryString."&s=".sanitize_title($search);
 		$failString .= " for search term '$search'";
 	}
+    query_posts($queryString);
     get_header("fullwidth");
     echo '<main class="salt-maincontent">';
     echo '<h1 class="salt-cat-title">'.$category[0]->cat_name.'</h1>';
