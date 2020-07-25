@@ -572,8 +572,9 @@ figcaption {
 }
 
 .podcastLogos {
-  width: max-content;
   margin: auto;
+  width: fit-content;
+
 }
 
 .podcastLogos .wp-block-group__inner-container {
@@ -581,18 +582,33 @@ figcaption {
 }
 
 .podcastLogos .wp-block-image {
-  margin: 20px !important;
+  margin: 0 20px !important;
+}
+
+.podcastLogos img {
+  display: block;
+  margin: auto;
+  width: 30px;
+  max-width: unset !important;
 }
 
 .podcastLogos img {
   display: block;
   margin: auto;
   width: 60px;
+  max-width: unset !important;
 }
+
 
 .podcastLogos .is-resized > figcaption {
   text-align: center;
 }
+@media (min-width: 450px) {
+  .podcastLogos img {
+    width: 60px;
+  }
+}
+
 /* Styling for 'Get Involved' page */
 
 .saltGetInvolved {
