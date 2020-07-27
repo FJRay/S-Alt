@@ -4,7 +4,7 @@
             if (has_post_thumbnail()) {
                 echo get_the_post_thumbnail();
             } else {
-                echo "<img src='".get_bloginfo('template_directory')."/resources/megaphone.png'> ";
+                echo "<img src='".get_bloginfo('template_directory')."/resources/megaphone.png' class='default-image'> ";
             }
         ?>
         <div class='salt-colorblock'>

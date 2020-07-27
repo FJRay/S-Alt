@@ -914,13 +914,17 @@ div .wpforms-field-medium {
 
 .salt-defaultarticle .salt-articleheader img,
 .salt-defaultpage .salt-pageheader img {
-width: 57%;
+    width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
     display: block;
     object-fit: cover;
     max-height: 380px;
+}
+.salt-defaultarticle .salt-articleheader .default-image,
+.salt-defaultpage .salt-pageheader .default-image {
+    width: 57%;
 }
 .salt-colorblock {
   width: 100%;
