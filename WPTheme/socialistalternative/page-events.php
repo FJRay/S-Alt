@@ -6,7 +6,8 @@
     get_header();
     echo '<main class="salt-maincontent salt-nomargin salt-homepage">';
     
-    ?>
+	?>
+	<div>
     <div class="salt-infoblock">
 		<?php
 			if (have_posts()) {
@@ -35,6 +36,7 @@
 		<h2>INTERNATIONAL</h2>
 		<p>We are proud to be part of a vibrant international organisation of dedicated socialist fighters, which has sections in 30 countries across the globe:<a href="http://internationalsocialist.net/" target="_blank" rel="noopener noreferrer" data-content="http://internationalsocialist.net" data-type="external">&nbsp;International Socialist Alternative</a>.&nbsp;</p>
 		<p><a href="https://internationalsocialist.net/"><img class="alignnone size-medium wp-image-262" src="http://freds.website/salt/wp-content/uploads/2020/06/isa-logo-300x123.png" alt="" width="300" height="123"></a></p>
+	</div>
 	</div>
     <?php
     echo '</main>';
