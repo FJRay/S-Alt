@@ -179,11 +179,6 @@ figcaption {
   margin: 0;
 }
 
-.salt-nomargin + .salt-sidebar,
-.salt-homepage + .salt-sidebar {
-  border-left: none;
-  margin: 0;
-}
 
 .salt-mainheader {
   background: linear-gradient(rgba(12, 8, 36, 0.8), rgba(12, 8, 36, 0.8)),
