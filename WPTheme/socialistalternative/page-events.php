@@ -4,7 +4,7 @@
 	Template Post Type: post, page, event
 	*/
     get_header();
-    echo '<main class="salt-maincontent salt-nomargin">';
+    echo '<main class="salt-maincontent salt-nomargin salt-homepage">';
     
     ?>
     <div class="salt-infoblock">
