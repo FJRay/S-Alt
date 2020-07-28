@@ -1183,7 +1183,7 @@ div .wpforms-field-medium {
 }
 .salt-moreevents {
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 0;
   color: rgb(231, 61, 30);
   font-weight: 700;
   font-size: 24px;
@@ -1231,13 +1231,7 @@ div .wpforms-field-medium {
   color: rgb(231, 61, 30);
   padding-bottom: 7px;
 }
-.salt-moreevents {
-  text-decoration: none;
-  padding: 10px;
-  color: rgb(231, 61, 30);
-  font-weight: 700;
-  font-size: 24px;
-}
+
 @media (min-width: 768px) {
   .salt-homepage + .salt-sidebar .sidebar-content {
     margin: 0;
