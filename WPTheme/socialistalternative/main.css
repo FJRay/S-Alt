@@ -1193,8 +1193,7 @@ div .wpforms-field-medium {
   font-size: 24px;
 }
 .salt-newsblock {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
+  color: rgb(12, 8, 36);
   margin: 0px;
   padding: 10px;
   min-height: calc(100vh - 300px);
@@ -1329,8 +1328,7 @@ div .wpforms-field-medium {
 }
 
 .salt-newsblock {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
+  color: rgb(12, 8, 36);
   margin: 0px;
   padding: 10px;
   min-height: calc(100vh - 300px);
@@ -1345,8 +1343,7 @@ div .wpforms-field-medium {
   color: inherit;
 }
 .salt-newsitem {
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
+  color: rgb(12, 8, 36);
   padding: 10px;
   margin: 0px;
   display: inline-block;
@@ -1394,7 +1391,7 @@ div .wpforms-field-medium {
   width: 100%;
   padding: 20px 10px;
   box-sizing: border-box;
-  background-color: rgb(12, 8, 36);
+
 }
 .salt-fullwidth .salt-sidebar {
   display: none;
