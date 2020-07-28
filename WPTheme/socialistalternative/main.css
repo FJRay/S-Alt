@@ -809,14 +809,18 @@ div .wpforms-field-medium {
 
 .salt-sidebar {
   display: none;
-  background-color: rgb(245, 248, 223);
+  background-color: rgb(12, 8, 36);
+  color: rgb(245, 248, 223);
+}
+.salt-sidebar h2 {
+  text-align: right;
+  color: rgb(231, 61, 30);
 }
 .salt-articlepreview {
   display: block;
   text-decoration: none;
   color: inherit;
   margin: 20px;
-  text-align: right;
   border-top: solid 3px rgb(12, 8, 36);
   padding-top: 10px;
 }
@@ -829,7 +833,7 @@ div .wpforms-field-medium {
   font-weight: 700;
   padding-bottom: 10px;
   font-size: 1.2rem;
-  color: rgb(231, 61, 30);
+  color: rgb(245, 248, 223);
   text-transform: uppercase;
 }
 .salt-articlepreview:first-child {
@@ -1124,8 +1128,7 @@ div .wpforms-field-medium {
 .salt-homeblock {
   padding: 20px;
   text-align: left;
-  background-color: rgb(12, 8, 36);
-  color: rgb(249, 249, 228);
+  color: rgb(12, 8, 36);
 }
 .salt-homeblock h2 {
   margin: 0px;
@@ -1141,7 +1144,6 @@ div .wpforms-field-medium {
 }
 
 .salt-upcomingevents h2 {
-  border-bottom: 2px solid rgb(249, 249, 228);
   text-align: left;
 }
 .salt-upcomingevents ul {
