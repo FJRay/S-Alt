@@ -1374,10 +1374,26 @@ flex-wrap: wrap;
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .salt-newsblock {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.salt-newsblock li:nth-child(odd) {
+  border-right: solid 2px black;
+  padding-right: 10px;
+}
+.salt-newsblock li:nth-child(even) {
+  padding-left: 10px;
+}
+.salt-newsblock li:nth-last-child(1), .salt-newsblock li:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.salt-newsitem {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 }
