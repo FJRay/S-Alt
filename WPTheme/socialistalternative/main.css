@@ -1286,6 +1286,10 @@ div .wpforms-field-medium {
     margin: 0;
     height: fit-content;
   }
+
+  .salt-homepage + .salt-sidebar .salt-articlepreview .default-image {
+    border: none;
+  }
   .salt-articlepreview {
     width: 90%;
     flex-shrink: 0;
