@@ -1050,7 +1050,7 @@ div .wpforms-field-medium {
 .salt-articlepreview.displaying {
   display: block;
   right: 0;
-  transition: right 0.5s linear;
+
 }
 
 .prev,
@@ -1087,6 +1087,9 @@ div .wpforms-field-medium {
 .salt-homepage + .salt-sidebar .salt-articlepreview img {
   object-fit: cover;
   max-height: 150px;
+}
+.salt-homepage + .salt-sidebar .salt-articlepreview .default-image {
+  border: solid 2px rgb(12, 8, 36);
 }
 .salt-homepage + .salt-sidebar .salt-articlepreview > p {
   display: none;
