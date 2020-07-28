@@ -1192,13 +1192,7 @@ div .wpforms-field-medium {
   font-weight: 700;
   font-size: 24px;
 }
-.salt-newsblock {
-  color: rgb(12, 8, 36);
-  margin: 0px;
-  padding: 10px;
-  min-height: calc(100vh - 300px);
-  list-style-type: none;
-}
+
 
 .salt-upcomingevents ul {
   padding: 0px;
@@ -1327,6 +1321,10 @@ div .wpforms-field-medium {
   padding-bottom: 40px;
 }
 
+
+/* End homepage */
+
+/* News page */
 .salt-newsblock {
   color: rgb(12, 8, 36);
   margin: 0px;
@@ -1334,53 +1332,54 @@ div .wpforms-field-medium {
   min-height: calc(100vh - 300px);
   list-style-type: none;
 }
-/* End homepage */
-
-/* News page */
-
+.salt-newsitem > a {
+display: flex;
+flex-wrap: wrap;
+}
 .salt-newsitem a {
   text-decoration: none;
   color: inherit;
 }
 .salt-newsitem {
   color: rgb(12, 8, 36);
-  padding: 10px;
   margin: 0px;
   display: inline-block;
   width: 100%;
-  box-sizing: border-box;
   vertical-align: top;
+  border-bottom: solid 2px rgb(12, 8, 36);
+  padding: 20px 0 10px;
+
 }
 .salt-newsitem h3 {
   margin: 0px;
   padding: 0px;
+  width: 50%;
+
 }
 .salt-error {
   margin-top: 0px;
 }
 .salt-newsitem img {
-  width: 250px;
-  float: left;
+  width: 50%;
   padding-right: 10px;
-  height: 150px;
+  height: auto;
   object-fit: cover;
 }
-.salt-newsitem:nth-child(even) img {
-  float: right;
-  padding-right: 0px;
-  padding-left: 10px;
-}
+
 .salt-newsitem .salt-articledetails {
   font-weight: 1;
+  width: 100%;
 }
 .salt-newsitem .salt-author {
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
-  .salt-newsitem {
-    width: 50%;
-  }
+  .salt-newsblock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 }
 
 /* End news page */
