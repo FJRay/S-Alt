@@ -341,9 +341,7 @@ figcaption {
   .salt-mainmenu {
     position: relative;
   }
-  .salt-altcolors .salt-mainmenu .menu {
-    background-color: rgb(231, 61, 30);
-  }
+
   .salt-mainmenu nav ul {
     margin: 0px 70px;
     display: flex;
@@ -496,9 +494,7 @@ figcaption {
   height: 50px;
   padding: 6px;
 }
-.salt-altcolors .salt-mainfooter {
-  background-color: rgb(231, 61, 30);
-}
+
 
 @media (min-width: 450px) {
   .salt-mainfooter {
