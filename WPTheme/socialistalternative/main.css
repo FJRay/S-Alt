@@ -53,6 +53,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: rgb(245, 248, 223);
+  overflow-x: hidden;
 }
 
 .size-medium {
