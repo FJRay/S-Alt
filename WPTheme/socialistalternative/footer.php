@@ -10,7 +10,7 @@
                 </a>
                 <a href="tel:07747444450">
                     <i class="fas fa-phone"></i>
-                    <span>07747 4444 50</span>
+                    <span>077 033 531 30</span>
                 </a>
             </div>
             <div class="salt-socialblock">
