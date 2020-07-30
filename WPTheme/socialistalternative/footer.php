@@ -1,9 +1,9 @@
 </div>
         <footer class="salt-mainfooter">
             <a href="<?php echo get_bloginfo("wpurl"); ?>" class="salt-footerhome">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative">
-            </a><div class="salt-contactblock">
-                <h2>CONTACT US</h2>
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/SA-logo-full-yellow.svg" alt="Socialist Alternative Logo">
+            </a>
+            <div class="salt-contactblock">
                 <a href="mailto:info@socialistalternative.net">
                     <i class="far fa-envelope"></i>
                     <span>info@socialistalternative.net</span>
@@ -12,7 +12,8 @@
                     <i class="fas fa-phone"></i>
                     <span>07747 4444 50</span>
                 </a>
-            </div><div class="salt-socialblock">
+            </div>
+            <div class="salt-socialblock">
                 <div class="salt-sociallinks">
                     <a href="https://www.facebook.com/SocialistAlternativeEW">
                     <i class="fab fa-facebook-f"></i>
@@ -30,6 +31,10 @@
                         <i class="fab fa-tiktok"></i>
                     </a>
                 </div>
+            </div>
+            <div class="salt-international-info">
+                <p>Socialist Alternative England, Wales and Scotland is part of International Socialist Alternative</p>
+                <img src="<?php echo get_bloginfo('template_directory'); ?>/resources/isa-logo.svg" alt="International Socialist Alternative Logo">
             </div>
         </footer>
         <?php wp_footer(); ?>
