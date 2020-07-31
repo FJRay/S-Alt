@@ -1028,6 +1028,10 @@ div .wpforms-field-medium {
   display: none;
 }
 
+img + .salt-colorblock {
+  display: block;
+}
+
 .salt-pageheader img + .salt-colorblock,
 .salt-articleheader img + .salt-colorblock {
   position: absolute;
