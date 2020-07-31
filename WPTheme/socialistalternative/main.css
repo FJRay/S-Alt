@@ -4,11 +4,11 @@
 
 .salt-paging {
 	text-align:center;
-	color: rgb(245, 248, 223);
+	color: rgb(12, 8, 36);
 }
 
 .salt-paging a {
-	color: rgb(245, 248, 223);
+	color: rgb(12, 8, 36);
 	text-decoration: none;
 }
 
@@ -87,7 +87,7 @@ figcaption {
 
 .salt-cat-title {
   margin: 0px;
-  color: #fff;
+  color: rgb(12, 8, 36);
   font-size: 48px;
   padding-left: 17px;
 }
