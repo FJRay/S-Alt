@@ -241,7 +241,7 @@ figcaption {
   right: calc(-50% - 18px);
   transition: right 0.5s linear;
   position: absolute;
-  height: fit-content;
+  height: auto;
   min-height: 100vh;
   box-shadow: -11px 0px 16px 0px rgba(0, 0, 0, 0.75);
   width: 50%;
@@ -351,7 +351,7 @@ figcaption {
   .salt-mainmenu .menu-btn ~ .menu {
     right: 0;
     position: relative;
-    height: fit-content;
+    height: auto;
     min-height: 0;
     box-shadow: none;
     width: 100%;
@@ -445,7 +445,7 @@ figcaption {
   color: inherit;
   font-weight: 700;
   padding-bottom: 7px;
-  width: fit-content;
+  width: auto;
   float: right;
 }
 .salt-contactblock svg {
@@ -598,8 +598,8 @@ figcaption {
   }
   .salt-international-info p {
     font-size: 0.8rem;
-    height: fit-content;
-    width: fit-content;
+    height: auto;
+    width: auto;
     margin-top: auto;
     flex-grow: 0;
   }
@@ -654,14 +654,9 @@ figcaption {
   margin-top: 50px;
 }
 
-.podcastLogos {
-  margin: auto;
-  width: fit-content;
-
-}
-
 .podcastLogos .wp-block-group__inner-container {
   display: flex;
+  justify-content: center;
 }
 
 .podcastLogos .wp-block-image {
@@ -1122,7 +1117,7 @@ img + .salt-colorblock {
 
 .salt-articlepreview {
   width: 100%;
-  height: fit-content;
+  height: auto;
   padding: 5% 5% 0;
   border: none;
   margin: 0;
@@ -1159,7 +1154,7 @@ img + .salt-colorblock {
 }
 
 .sidebar-buttons {
-  width: fit-content;
+  width: auto;
   margin: auto;
 }
 
@@ -1238,7 +1233,6 @@ img + .salt-colorblock {
 }
 .salt-event {
   list-style-type: none;
-  height: 120px;
   overflow: hidden;
   margin: 20px 0px;
 }
@@ -1291,7 +1285,7 @@ img + .salt-colorblock {
 }
 .salt-event {
   list-style-type: none;
-  height: fit-content;
+  height: auto;
   overflow: hidden;
   margin: 20px 0px;
   border-bottom: solid 2px;
@@ -1350,19 +1344,10 @@ img + .salt-colorblock {
   }
 }
 @media (min-width: 920px) {
-  .salt-homepage {
-    font-size: 0px;
-    min-height: calc(100vh - 300px);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-columns: minmax(auto, 25%);
-    grid-auto-flow: column;
-  }
-
   .salt-homepage + .salt-sidebar .sidebar-content {
     display: block;
     margin: 0;
-    height: fit-content;
+    height: auto;
   }
 
   .salt-homepage + .salt-sidebar .salt-articlepreview .default-image {
@@ -1371,7 +1356,7 @@ img + .salt-colorblock {
   .salt-articlepreview {
     width: 90%;
     flex-shrink: 0;
-    height: fit-content;
+    height: auto;
     padding: 0 0 20px 0;
     border-bottom: solid 2px rgb(245, 248, 223);
     margin: auto;
