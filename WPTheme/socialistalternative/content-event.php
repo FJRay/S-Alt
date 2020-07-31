@@ -7,8 +7,8 @@
 				echo "<img src='".get_bloginfo('template_directory')."/resources/headerimage.jpg'> ";
 			}
 		?>
-		<div class="salt-eventdate"><?php the_date(); ?></div>
-		<h3><?php the_title(); ?></h3>
+		<!-- <div class="salt-eventdate"><?php the_date(); ?></div> -->
+		<h5><?php the_title(); ?></h5>
 		<?php the_content() ?>
 	</a>
 </li>

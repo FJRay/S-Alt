@@ -726,25 +726,6 @@ div .wpforms-field-medium {
 
 /* Styling for 'About' page*/
 
-.saltAboutContainer .wp-block-image {
-  margin-top: -109px;
-}
-.wp-image-102 {
-  width: 65%;
-  z-index: -1;
-  position: relative;
-  margin-left: -47px;
-}
-.saltAboutHeader {
-  font-size: 2.2rem !important;
-  text-align: right;
-  color: rgb(12, 8, 36);
-  position: relative;
-  margin-top: 40px;
-  margin-right: 23px;
-  max-width: 94%;
-}
-
 .saltPoliciesHeader {
   margin-left: 20px;
   margin-right: auto;
@@ -1266,7 +1247,14 @@ img + .salt-colorblock {
   text-decoration: none;
   color: inherit;
 }
-.salt-event h3 {
+.salt-event h5 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: rgb(231, 61, 30);
+
+}
+
+.salt-event h4 {
   margin: 0px;
   padding: 0px;
   font-size: 1.2rem;
@@ -1282,6 +1270,7 @@ img + .salt-colorblock {
   width: 360px;
   float: right;
   object-fit: cover;
+  margin-left: 20px;
 }
 .salt-eventdate {
   color: rgb(231, 61, 30);
