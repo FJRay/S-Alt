@@ -506,9 +506,7 @@ figcaption {
   text-align: right;
   margin: auto;
 }
-.salt-altcolors .salt-mainfooter {
-  background-color: rgb(231, 61, 30);
-}
+
 
 @media (min-width: 450px) {
   .salt-mainfooter {
@@ -725,25 +723,6 @@ div .wpforms-field-medium {
 /* End of 'Get Involved' */
 
 /* Styling for 'About' page*/
-
-.saltAboutContainer .wp-block-image {
-  margin-top: -109px;
-}
-.wp-image-102 {
-  width: 65%;
-  z-index: -1;
-  position: relative;
-  margin-left: -47px;
-}
-.saltAboutHeader {
-  font-size: 2.2rem !important;
-  text-align: right;
-  color: rgb(12, 8, 36);
-  position: relative;
-  margin-top: 40px;
-  margin-right: 23px;
-  max-width: 94%;
-}
 
 .saltPoliciesHeader {
   margin-left: 20px;
@@ -1028,6 +1007,10 @@ div .wpforms-field-medium {
   display: none;
 }
 
+img + .salt-colorblock {
+  display: block;
+}
+
 .salt-pageheader img + .salt-colorblock,
 .salt-articleheader img + .salt-colorblock {
   position: absolute;
@@ -1220,6 +1203,7 @@ div .wpforms-field-medium {
   padding: 20px;
   width: 90%;
   font-size: 1rem;
+  margin-top: 80px;
 }
 .salt-homeblock {
   padding: 20px;
@@ -1262,7 +1246,14 @@ div .wpforms-field-medium {
   text-decoration: none;
   color: inherit;
 }
-.salt-event h3 {
+.salt-event h5 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: rgb(231, 61, 30);
+
+}
+
+.salt-event h4 {
   margin: 0px;
   padding: 0px;
   font-size: 1.2rem;
@@ -1278,6 +1269,7 @@ div .wpforms-field-medium {
   width: 360px;
   float: right;
   object-fit: cover;
+  margin-left: 20px;
 }
 .salt-eventdate {
   color: rgb(231, 61, 30);
