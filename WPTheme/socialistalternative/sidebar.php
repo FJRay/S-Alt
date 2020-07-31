@@ -3,7 +3,7 @@
     <div class="sidebar-content">
     <?php 
         $sidebar_loop = new WP_Query(array(
-            "category_name" => "Uncategorized",
+            "cat" => -get_cat_ID(get_theme_mod('category_name',"events")),
             "posts_per_page" => 3
         ));
         if ($sidebar_loop->have_posts()) {

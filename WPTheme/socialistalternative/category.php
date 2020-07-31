@@ -5,9 +5,9 @@
     if ($tpage < 1) {
 		$tpage = 1;
 	}
-    $queryString = "posts_per_page=".$pageSize."&offset=".($tpage-1)*$pageSize;
     $failString = "No posts found";
-    $category = get_the_category(); 
+    $category = get_queried_object();
+    $queryString = "posts_per_page=".$pageSize."&offset=".($tpage-1)*$pageSize."&cat=".$category->cat_ID;
     if ($search && $search != "") {
 		$search = preg_replace("/[^\w ]/", "", $search);
 		$queryString = $queryString."&s=".sanitize_title($search);
@@ -16,7 +16,7 @@
     query_posts($queryString);
     get_header("fullwidth");
     echo '<main class="salt-maincontent">';
-    echo '<h1 class="salt-cat-title">'.$category[0]->cat_name.'</h1>';
+    echo '<h1 class="salt-cat-title">'.$category->cat_name.'</h1>';
     echo '<ul class="salt-newsblock">';
     if (have_posts()) {
         while (have_posts()) {

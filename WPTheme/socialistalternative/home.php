@@ -5,7 +5,7 @@
     if ($tpage < 1) {
 		$tpage = 1;
 	}
-    $queryString = "posts_per_page=".$pageSize."&offset=".($tpage-1)*$pageSize;
+    $queryString = "posts_per_page=".$pageSize."&offset=".($tpage-1)*$pageSize."&cat=".(-get_cat_ID(get_theme_mod('category_name',"events")));
     $failString = "No posts found";
     if ($search && $search != "") {
 		$search = preg_replace("/[^\w ]/", "", $search);
