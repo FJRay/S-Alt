@@ -39,5 +39,4 @@ function initializeCarousel(slidesSelector, prevButtonSelector, nextButtonSelect
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeCarousel('salt-articlepreview', 'salt-articlepreview-prev', 'salt-articlepreview-next');
-  initializeCarousel('salt-event', 'salt-articlepreview-prev', 'salt-articlepreview-next');
 })

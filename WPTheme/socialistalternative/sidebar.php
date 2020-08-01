@@ -1,5 +1,5 @@
 <div class="salt-sidebar">
-    <h2>NEWS</h2>
+    <h2>LATEST NEWS</h2>
     <div class="sidebar-content">
     <?php 
         $sidebar_loop = new WP_Query(array(
