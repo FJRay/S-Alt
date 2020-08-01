@@ -1111,6 +1111,7 @@ img + .salt-colorblock {
 .salt-homepage + .salt-sidebar {
   display: block;
   grid-area: 2 / 1 / 2 / 1;
+  border-bottom: solid 2px;
 }
 
 .salt-homepage + .salt-sidebar .sidebar-content {
@@ -1125,9 +1126,6 @@ img + .salt-colorblock {
   border: none;
   margin: 0;
   display: none;
-  right: 100vw;
-  transition: none;
-  position: absolute;
 }
 
 .salt-articlepreview.displaying {
@@ -1159,6 +1157,8 @@ img + .salt-colorblock {
 .sidebar-buttons {
   width: auto;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .salt-homepage + .salt-sidebar h2 {
