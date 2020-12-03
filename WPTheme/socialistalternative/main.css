@@ -1245,13 +1245,14 @@ img + .salt-colorblock {
   overflow: hidden;
   margin: 20px 0px;
 }
-a.salt-articlepreview {
+.salt-articlepreview a{
   text-decoration: none;
   color: inherit;
 }
 .salt-articlepreview h3 {
   text-decoration: none;
   color: rgb(12, 8, 36);
+  margin-top: 0;
 }
 .salt-articlepreview h5 {
   margin: 10px 0;
@@ -1342,7 +1343,7 @@ a.salt-moreevents p {
     font-size: 1.2rem;
   }
   .salt-articlepreview img {
-    height: 275px;
+    height: 230px;
     width: 50%;
     float: right;
     object-fit: cover;
@@ -1381,6 +1382,15 @@ a.salt-moreevents p {
   .salt-homepage + .salt-sidebar h2 {
     letter-spacing: 1px;
   }
+  .salt-articlepreview img {
+    height: 225px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .salt-homepage + .salt-sidebar .salt-event > p {
+    display: block;
+  }
 
   .salt-homeblock {
     display: grid;
@@ -1403,11 +1413,6 @@ a.salt-moreevents p {
 
   .salt-articlepreview img {
     height: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  .salt-homepage + .salt-sidebar .salt-event > p {
-    display: block;
   }
 }
 .salt-international .wp-block-image {
