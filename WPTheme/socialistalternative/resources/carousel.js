@@ -37,6 +37,6 @@ function initializeCarousel(slidesSelector, prevButtonSelector, nextButtonSelect
   updateSlideDisplay();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  initializeCarousel('salt-articlepreview', 'salt-articlepreview-prev', 'salt-articlepreview-next');
-})
+// document.addEventListener("DOMContentLoaded", () => {
+//   initializeCarousel('salt-articlepreview', 'salt-articlepreview-prev', 'salt-articlepreview-next');
+// })

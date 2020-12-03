@@ -1,7 +1,7 @@
 <?php 
 	$pageSize = 6;
     $search = get_query_var("search");
-    $tpage = intval(get_query_var("page"));
+    $tpage = intval(get_query_var("page_id"));
     if ($tpage < 1) {
 		$tpage = 1;
 	}
@@ -26,9 +26,9 @@
     echo '</ul>';
     echo '<div class="salt-paging">';
     if ($tpage && $tpage > 1) {
-		echo '<a href="?page='.($tpage-1).'" class="salt-prev">◄</a> ';
+		echo '<a href="?page_id='.($tpage-1).'" class="salt-prev">◄</a> ';
 	}
-    echo '<span>Page '.($tpage).' </span><a href="?page='.($tpage+1).'" class="salt-next">►</a>';
+    echo '<span>Page '.($tpage).' </span><a href="?page_id='.($tpage+1).'" class="salt-next">►</a>';
     echo '</div></main>';
     get_sidebar();
     get_footer();
