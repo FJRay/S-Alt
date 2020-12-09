@@ -1214,8 +1214,8 @@ img + .salt-colorblock {
   text-align: left;
   color: rgb(12, 8, 36);
 }
-.salt-homeblock:first-child {
-  border: none;
+.salt-articlepreview:last-child {
+  border-bottom: none;
 }
 .salt-homeblock h2 {
   margin: 0px;
@@ -1272,7 +1272,6 @@ img + .salt-colorblock {
 .salt-articlepreview p {
   margin: 10px 0px;
   padding: 0px;
-  font-weight: 1;
 }
 .salt-articlepreview img {
   height: 200px;
