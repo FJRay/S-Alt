@@ -1409,6 +1409,9 @@ a.salt-moreevents p {
   .salt-homeblock div:nth-child(even) {
     padding-right: 20px;
   }
+  .salt-articlepreview:last-child {
+    border-bottom: solid 2px black;
+  }
   .salt-homeblock h2 {
     grid-column: 1 / span 2;
   }
